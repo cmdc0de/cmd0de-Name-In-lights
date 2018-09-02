@@ -1,0 +1,2201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="9.1.3">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.5" altunitdist="mm" altunit="mm"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
+<layer number="3" name="Route3" color="17" fill="1" visible="no" active="no"/>
+<layer number="4" name="Route4" color="18" fill="1" visible="no" active="no"/>
+<layer number="5" name="Route5" color="19" fill="1" visible="no" active="no"/>
+<layer number="6" name="Route6" color="25" fill="1" visible="no" active="no"/>
+<layer number="7" name="Route7" color="26" fill="1" visible="no" active="no"/>
+<layer number="8" name="Route8" color="27" fill="1" visible="no" active="no"/>
+<layer number="9" name="Route9" color="28" fill="1" visible="no" active="no"/>
+<layer number="10" name="Route10" color="29" fill="1" visible="no" active="no"/>
+<layer number="11" name="Route11" color="30" fill="1" visible="no" active="no"/>
+<layer number="12" name="Route12" color="20" fill="1" visible="no" active="no"/>
+<layer number="13" name="Route13" color="21" fill="1" visible="no" active="no"/>
+<layer number="14" name="Route14" color="22" fill="1" visible="no" active="no"/>
+<layer number="15" name="Route15" color="23" fill="1" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="88" name="SimResults" color="9" fill="1" visible="no" active="no"/>
+<layer number="89" name="SimProbes" color="9" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="no"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="no"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="no"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="no"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="no"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="no"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="no" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="no" active="yes"/>
+<layer number="103" name="fp3" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="no" active="yes"/>
+<layer number="105" name="Beschreib" color="9" fill="1" visible="no" active="yes"/>
+<layer number="106" name="BGA-Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="107" name="BD-Top" color="5" fill="1" visible="no" active="yes"/>
+<layer number="108" name="fp8" color="7" fill="1" visible="no" active="yes"/>
+<layer number="109" name="fp9" color="7" fill="1" visible="no" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="no" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="no" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="113" name="ReferenceLS" color="7" fill="1" visible="no" active="no"/>
+<layer number="114" name="Badge_Outline" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="115" name="ReferenceISLANDS" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="no" active="yes"/>
+<layer number="117" name="mPads" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="no" active="no"/>
+<layer number="119" name="mUnrouted" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="120" name="mDimension" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="no" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="no" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="130" name="mbStop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="no" active="yes"/>
+<layer number="133" name="mtFinish" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="134" name="mbFinish" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="135" name="mtGlue" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="136" name="mbGlue" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="137" name="mtTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="138" name="mbTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="139" name="mtKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="140" name="mbKeepout" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="141" name="mtRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="142" name="mbRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="143" name="mvRestrict" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="no" active="yes"/>
+<layer number="145" name="mHoles" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="146" name="mMilling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="147" name="mMeasures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="148" name="mDocument" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="149" name="mReference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="153" name="FabDoc1" color="6" fill="1" visible="no" active="no"/>
+<layer number="154" name="FabDoc2" color="2" fill="1" visible="no" active="no"/>
+<layer number="155" name="FabDoc3" color="7" fill="15" visible="no" active="no"/>
+<layer number="191" name="mNets" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="192" name="mBusses" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="193" name="mPins" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="194" name="mSymbols" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="195" name="mNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="196" name="mValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="Contour" color="7" fill="1" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="yes"/>
+<layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
+<layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="no" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="no" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="no" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="no" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="no" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="no" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="no" active="no"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="no" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="no" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
+</layers>
+<board>
+<plain>
+<wire x1="0" y1="25.4" x2="101.58" y2="25.4" width="0" layer="20"/>
+<wire x1="101.58" y1="25.4" x2="101.58" y2="100" width="0" layer="20"/>
+<wire x1="101.58" y1="100" x2="0" y2="100" width="0" layer="20"/>
+<wire x1="0" y1="100" x2="0" y2="25.4" width="0" layer="20"/>
+<hole x="51" y="96" drill="3"/>
+</plain>
+<libraries>
+<library name="dc-26">
+<packages>
+<package name="APA104">
+<description>&lt;b&gt;APA104&lt;/b&gt;&lt;br&gt;</description>
+<smd name="1" x="-2.4" y="1.6" dx="1.35" dy="0.95" layer="1"/>
+<smd name="2" x="-2.4" y="-1.6" dx="1.35" dy="0.95" layer="1"/>
+<smd name="3" x="2.4" y="-1.6" dx="1.35" dy="0.95" layer="1"/>
+<smd name="4" x="2.4" y="1.6" dx="1.35" dy="0.95" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="51" align="center">&gt;VALUE</text>
+<wire x1="-3.325" y1="2.75" x2="3.325" y2="2.75" width="0.05" layer="21"/>
+<wire x1="3.325" y1="2.75" x2="3.325" y2="-2.75" width="0.05" layer="21"/>
+<wire x1="3.325" y1="-2.75" x2="-3.325" y2="-2.75" width="0.05" layer="21"/>
+<wire x1="-3.325" y1="-2.75" x2="-3.325" y2="2.75" width="0.05" layer="21"/>
+<wire x1="-2.7" y1="2.5" x2="2.7" y2="2.5" width="0.1" layer="51"/>
+<wire x1="2.7" y1="2.5" x2="2.7" y2="-2.5" width="0.1" layer="51"/>
+<wire x1="2.7" y1="-2.5" x2="-2.7" y2="-2.5" width="0.1" layer="51"/>
+<wire x1="-2.7" y1="-2.5" x2="-2.7" y2="2.5" width="0.1" layer="51"/>
+<wire x1="1.325" y1="-2.475" x2="2.675" y2="-1.125" width="0.1" layer="51"/>
+<wire x1="-1.375" y1="2.5" x2="1.375" y2="2.5" width="0.2" layer="25"/>
+<wire x1="1.375" y1="2.5" x2="1.375" y2="-2.5" width="0.2" layer="25"/>
+<wire x1="1.375" y1="-2.5" x2="-1.375" y2="-2.5" width="0.2" layer="25"/>
+<wire x1="-1.375" y1="-2.5" x2="-1.375" y2="2.5" width="0.2" layer="25"/>
+<circle x="-2.825" y="2.575" radius="0.125" width="0.25" layer="25"/>
+</package>
+</packages>
+</library>
+<library name="NameInLights">
+<packages>
+<package name="C0805">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+chip</description>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
+<smd name="2" x="0.85" y="0" dx="1.3" dy="1.5" layer="1"/>
+<text x="-0.889" y="1.016" size="0.6096" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.143" y="-1.778" size="0.6096" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+</package>
+<package name="SOIC127P600X175-8N">
+<description>&lt;b&gt;8S1 - JEDEC SOIC&lt;/b&gt;&lt;br&gt;
+</description>
+<smd name="1" x="-2.712" y="1.905" dx="1.525" dy="0.65" layer="1"/>
+<smd name="2" x="-2.712" y="0.635" dx="1.525" dy="0.65" layer="1"/>
+<smd name="3" x="-2.712" y="-0.635" dx="1.525" dy="0.65" layer="1"/>
+<smd name="4" x="-2.712" y="-1.905" dx="1.525" dy="0.65" layer="1"/>
+<smd name="5" x="2.712" y="-1.905" dx="1.525" dy="0.65" layer="1"/>
+<smd name="6" x="2.712" y="-0.635" dx="1.525" dy="0.65" layer="1"/>
+<smd name="7" x="2.712" y="0.635" dx="1.525" dy="0.65" layer="1"/>
+<smd name="8" x="2.712" y="1.905" dx="1.525" dy="0.65" layer="1"/>
+<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
+<text x="0" y="0" size="1.27" layer="27" align="center">&gt;VALUE</text>
+<wire x1="-3.725" y1="2.775" x2="3.725" y2="2.775" width="0.05" layer="51"/>
+<wire x1="3.725" y1="2.775" x2="3.725" y2="-2.775" width="0.05" layer="51"/>
+<wire x1="3.725" y1="-2.775" x2="-3.725" y2="-2.775" width="0.05" layer="51"/>
+<wire x1="-3.725" y1="-2.775" x2="-3.725" y2="2.775" width="0.05" layer="51"/>
+<wire x1="-1.95" y1="2.462" x2="1.95" y2="2.462" width="0.1" layer="51"/>
+<wire x1="1.95" y1="2.462" x2="1.95" y2="-2.462" width="0.1" layer="51"/>
+<wire x1="1.95" y1="-2.462" x2="-1.95" y2="-2.462" width="0.1" layer="51"/>
+<wire x1="-1.95" y1="-2.462" x2="-1.95" y2="2.462" width="0.1" layer="51"/>
+<wire x1="-1.95" y1="1.192" x2="-0.68" y2="2.462" width="0.1" layer="51"/>
+<wire x1="-1.6" y1="2.462" x2="1.6" y2="2.462" width="0.2" layer="21"/>
+<wire x1="1.6" y1="2.462" x2="1.6" y2="-2.462" width="0.2" layer="21"/>
+<wire x1="1.6" y1="-2.462" x2="-1.6" y2="-2.462" width="0.2" layer="21"/>
+<wire x1="-1.6" y1="-2.462" x2="-1.6" y2="2.462" width="0.2" layer="21"/>
+<wire x1="-3.475" y1="2.58" x2="-1.95" y2="2.58" width="0.2" layer="21"/>
+</package>
+<package name="1X08">
+<wire x1="14.605" y1="1.27" x2="15.875" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="15.875" y1="1.27" x2="16.51" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="16.51" y1="-0.635" x2="15.875" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="11.43" y1="0.635" x2="12.065" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="12.065" y1="1.27" x2="13.335" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="13.335" y1="1.27" x2="13.97" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="-0.635" x2="13.335" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="13.335" y1="-1.27" x2="12.065" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="12.065" y1="-1.27" x2="11.43" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="14.605" y1="1.27" x2="13.97" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="13.97" y1="-0.635" x2="14.605" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="15.875" y1="-1.27" x2="14.605" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="8.255" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="1.27" x2="8.89" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="-0.635" x2="8.255" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="8.89" y1="0.635" x2="9.525" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="9.525" y1="1.27" x2="10.795" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="10.795" y1="1.27" x2="11.43" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="11.43" y1="-0.635" x2="10.795" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="10.795" y1="-1.27" x2="9.525" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="9.525" y1="-1.27" x2="8.89" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="4.445" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.27" x2="5.715" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="5.715" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="5.715" y1="-1.27" x2="4.445" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.27" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="1.27" x2="6.35" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-0.635" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="8.255" y1="-1.27" x2="6.985" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="17.145" y1="1.27" x2="18.415" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="18.415" y1="1.27" x2="19.05" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="19.05" y1="0.635" x2="19.05" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="19.05" y1="-0.635" x2="18.415" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="17.145" y1="1.27" x2="16.51" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="16.51" y1="-0.635" x2="17.145" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="18.415" y1="-1.27" x2="17.145" y2="-1.27" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" shape="square" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="3" x="5.08" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="4" x="7.62" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="5" x="10.16" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="6" x="12.7" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="7" x="15.24" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="8" x="17.78" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="14.986" y1="-0.254" x2="15.494" y2="0.254" layer="51"/>
+<rectangle x1="12.446" y1="-0.254" x2="12.954" y2="0.254" layer="51"/>
+<rectangle x1="9.906" y1="-0.254" x2="10.414" y2="0.254" layer="51"/>
+<rectangle x1="7.366" y1="-0.254" x2="7.874" y2="0.254" layer="51"/>
+<rectangle x1="4.826" y1="-0.254" x2="5.334" y2="0.254" layer="51"/>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+<rectangle x1="17.526" y1="-0.254" x2="18.034" y2="0.254" layer="51"/>
+</package>
+<package name="0805">
+<wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
+<wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
+<smd name="1" x="-0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<smd name="2" x="0.9" y="0" dx="0.8" dy="1.2" layer="1"/>
+<text x="-0.762" y="0.8255" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-1.016" y="-1.397" size="0.4064" layer="27">&gt;VALUE</text>
+</package>
+<package name="TACTILE-2PIN-NARROW">
+<text x="-2.794" y="2.032" size="0.6096" layer="25" font="vector" ratio="10">&gt;NAME</text>
+<pad name="P$1" x="3.2639" y="0" drill="1.1" diameter="2.1844"/>
+<pad name="P$2" x="-3.2639" y="0" drill="1.1" diameter="2.1844"/>
+<wire x1="-3.048" y1="-1.778" x2="-3.048" y2="1.7272" width="0.127" layer="49"/>
+<wire x1="-3.048" y1="-1.778" x2="3.048" y2="-1.778" width="0.127" layer="49"/>
+<wire x1="3.048" y1="-1.778" x2="3.048" y2="1.7272" width="0.127" layer="49"/>
+<wire x1="-3.048" y1="1.778" x2="3.048" y2="1.778" width="0.127" layer="49"/>
+<wire x1="-1.524" y1="-0.762" x2="1.524" y2="-0.762" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="-0.762" x2="-1.524" y2="0.762" width="0.127" layer="21"/>
+<wire x1="1.524" y1="-0.762" x2="1.524" y2="0.762" width="0.127" layer="21"/>
+<wire x1="-1.524" y1="0.762" x2="1.524" y2="0.762" width="0.127" layer="21"/>
+</package>
+</packages>
+</library>
+<library name="name-in-lights">
+<packages>
+<package name="1X02">
+<wire x1="-0.635" y1="1.27" x2="0.635" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="-0.635" x2="0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.27" y1="0.635" x2="1.905" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="3.175" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="1.27" x2="3.81" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-0.635" x2="3.175" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.175" y1="-1.27" x2="1.905" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-1.27" y2="0.635" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="-0.635" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="-0.635" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="-0.635" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="1.8796" rot="R90"/>
+<text x="-1.3462" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-1.27" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="2.286" y1="-0.254" x2="2.794" y2="0.254" layer="51"/>
+<rectangle x1="-0.254" y1="-0.254" x2="0.254" y2="0.254" layer="51"/>
+</package>
+<package name="C0805-VOLTA">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt;&lt;p&gt;
+chip</description>
+<wire x1="-1.973" y1="0.983" x2="1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="1.973" y1="-0.983" x2="-1.973" y2="-0.983" width="0.0508" layer="39"/>
+<wire x1="-1.973" y1="-0.983" x2="-1.973" y2="0.983" width="0.0508" layer="39"/>
+<wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
+<wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
+<wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
+<smd name="1" x="-0.8636" y="0" dx="1.1684" dy="1.4986" layer="1"/>
+<smd name="2" x="0.8636" y="0" dx="1.1684" dy="1.4986" layer="1"/>
+<text x="-0.762" y="1.016" size="0.254" layer="25" font="vector">&gt;NAME</text>
+<text x="-0.762" y="-1.27" size="0.254" layer="27" font="vector">&gt;VALUE</text>
+<rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>
+<rectangle x1="0.3556" y1="-0.7239" x2="1.1057" y2="0.7262" layer="51"/>
+<rectangle x1="-0.1001" y1="-0.4001" x2="0.1001" y2="0.4001" layer="35"/>
+</package>
+</packages>
+</library>
+</libraries>
+<attributes>
+</attributes>
+<variantdefs>
+</variantdefs>
+<classes>
+<class number="0" name="default" width="0" drill="0">
+</class>
+</classes>
+<designrules name="Voltera_DRC">
+<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
+&lt;p&gt;
+Die Standard-Design-Rules sind so gewählt, dass sie für 
+die meisten Anwendungen passen. Sollte ihre Platine 
+besondere Anforderungen haben, treffen Sie die erforderlichen
+Einstellungen hier und speichern die Design Rules unter 
+einem neuen Namen ab.</description>
+<description language="en">&lt;b&gt;VOLTERA V-ONE Design Rules&lt;/b&gt;
+&lt;p&gt;
+These design rules are intended to identify common sources of printing errors when printing a circuit with the Voltera V-One. &lt;b&gt;Always thoroughly check your design in the V-One software print preview before printing! 
+&lt;p&gt;&lt;b&gt;COPPER POURS:&lt;/b&gt; Use Hatch planes, or replace with a trace.
+&lt;br&gt;&lt;b&gt;BOARD SIZE:&lt;/b&gt; Maximum 4x5 inches. 
+&lt;/p&gt;
+&lt;p&gt;
+V1.0 2018-04-18
+&lt;ul&gt; 
+&lt;li&gt;Min trace width / spacing set to 10 mil. 
+&lt;li&gt;Recommended minimum via drill diameter 0.4mm.
+&lt;li&gt;Minimum annular ring for via/pad 0.2mm.
+&lt;li&gt;Changed restring value to 0 for rivets.
+&lt;/ul&gt;</description>
+<param name="layerSetup" value="(1*16)"/>
+<param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mdWireWire" value="10mil"/>
+<param name="mdWirePad" value="10mil"/>
+<param name="mdWireVia" value="0.6mm"/>
+<param name="mdPadPad" value="0.6mm"/>
+<param name="mdPadVia" value="0.6mm"/>
+<param name="mdViaVia" value="0.6mm"/>
+<param name="mdSmdPad" value="0mil"/>
+<param name="mdSmdVia" value="0mil"/>
+<param name="mdSmdSmd" value="0mil"/>
+<param name="mdViaViaSameLayer" value="8mil"/>
+<param name="mnLayersViaInSmd" value="2"/>
+<param name="mdCopperDimension" value="0mil"/>
+<param name="mdDrill" value="0.8mm"/>
+<param name="mdSmdStop" value="0mil"/>
+<param name="msWidth" value="10mil"/>
+<param name="msDrill" value="0.4mm"/>
+<param name="msMicroVia" value="9.99mm"/>
+<param name="msBlindViaRatio" value="0.5"/>
+<param name="rvPadTop" value="0"/>
+<param name="rvPadInner" value="0"/>
+<param name="rvPadBottom" value="0"/>
+<param name="rvViaOuter" value="0"/>
+<param name="rvViaInner" value="0"/>
+<param name="rvMicroViaOuter" value="0"/>
+<param name="rvMicroViaInner" value="0"/>
+<param name="rlMinPadTop" value="0.2mm"/>
+<param name="rlMaxPadTop" value="20mil"/>
+<param name="rlMinPadInner" value="10mil"/>
+<param name="rlMaxPadInner" value="20mil"/>
+<param name="rlMinPadBottom" value="0.2mm"/>
+<param name="rlMaxPadBottom" value="20mil"/>
+<param name="rlMinViaOuter" value="0.2mm"/>
+<param name="rlMaxViaOuter" value="20mil"/>
+<param name="rlMinViaInner" value="10mil"/>
+<param name="rlMaxViaInner" value="20mil"/>
+<param name="rlMinMicroViaOuter" value="4mil"/>
+<param name="rlMaxMicroViaOuter" value="20mil"/>
+<param name="rlMinMicroViaInner" value="4mil"/>
+<param name="rlMaxMicroViaInner" value="20mil"/>
+<param name="psTop" value="-1"/>
+<param name="psBottom" value="-1"/>
+<param name="psFirst" value="-1"/>
+<param name="psElongationLong" value="100"/>
+<param name="psElongationOffset" value="100"/>
+<param name="mvStopFrame" value="1"/>
+<param name="mvCreamFrame" value="0"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
+<param name="mlMinCreamFrame" value="0mil"/>
+<param name="mlMaxCreamFrame" value="0mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
+<param name="srRoundness" value="0"/>
+<param name="srMinRoundness" value="0mil"/>
+<param name="srMaxRoundness" value="0mil"/>
+<param name="slThermalIsolate" value="10mil"/>
+<param name="slThermalsForVias" value="0"/>
+<param name="dpMaxLengthDifference" value="10mm"/>
+<param name="dpGapFactor" value="2.5"/>
+<param name="checkAngle" value="1"/>
+<param name="checkFont" value="1"/>
+<param name="checkRestrict" value="1"/>
+<param name="checkStop" value="0"/>
+<param name="checkValues" value="0"/>
+<param name="checkNames" value="1"/>
+<param name="checkWireStubs" value="1"/>
+<param name="checkPolygonWidth" value="0"/>
+<param name="useDiameter" value="13"/>
+<param name="maxErrors" value="50"/>
+</designrules>
+<autorouter>
+<pass name="Default">
+<param name="RoutingGrid" value="50mil"/>
+<param name="AutoGrid" value="1"/>
+<param name="Efforts" value="0"/>
+<param name="TopRouterVariant" value="1"/>
+<param name="tpViaShape" value="round"/>
+<param name="PrefDir.1" value="a"/>
+<param name="PrefDir.2" value="0"/>
+<param name="PrefDir.3" value="0"/>
+<param name="PrefDir.4" value="0"/>
+<param name="PrefDir.5" value="0"/>
+<param name="PrefDir.6" value="0"/>
+<param name="PrefDir.7" value="0"/>
+<param name="PrefDir.8" value="0"/>
+<param name="PrefDir.9" value="0"/>
+<param name="PrefDir.10" value="0"/>
+<param name="PrefDir.11" value="0"/>
+<param name="PrefDir.12" value="0"/>
+<param name="PrefDir.13" value="0"/>
+<param name="PrefDir.14" value="0"/>
+<param name="PrefDir.15" value="0"/>
+<param name="PrefDir.16" value="a"/>
+<param name="cfVia" value="8"/>
+<param name="cfNonPref" value="5"/>
+<param name="cfChangeDir" value="2"/>
+<param name="cfOrthStep" value="2"/>
+<param name="cfDiagStep" value="3"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="1"/>
+<param name="cfMalusStep" value="1"/>
+<param name="cfPadImpact" value="4"/>
+<param name="cfSmdImpact" value="4"/>
+<param name="cfBusImpact" value="0"/>
+<param name="cfHugging" value="3"/>
+<param name="cfAvoid" value="4"/>
+<param name="cfPolygon" value="10"/>
+<param name="cfBase.1" value="0"/>
+<param name="cfBase.2" value="1"/>
+<param name="cfBase.3" value="1"/>
+<param name="cfBase.4" value="1"/>
+<param name="cfBase.5" value="1"/>
+<param name="cfBase.6" value="1"/>
+<param name="cfBase.7" value="1"/>
+<param name="cfBase.8" value="1"/>
+<param name="cfBase.9" value="1"/>
+<param name="cfBase.10" value="1"/>
+<param name="cfBase.11" value="1"/>
+<param name="cfBase.12" value="1"/>
+<param name="cfBase.13" value="1"/>
+<param name="cfBase.14" value="1"/>
+<param name="cfBase.15" value="1"/>
+<param name="cfBase.16" value="0"/>
+<param name="mnVias" value="20"/>
+<param name="mnSegments" value="9999"/>
+<param name="mnExtdSteps" value="9999"/>
+<param name="mnRipupLevel" value="10"/>
+<param name="mnRipupSteps" value="100"/>
+<param name="mnRipupTotal" value="100"/>
+</pass>
+<pass name="Follow-me" refer="Default" active="yes">
+</pass>
+<pass name="Busses" refer="Default" active="yes">
+<param name="cfNonPref" value="4"/>
+<param name="cfBusImpact" value="4"/>
+<param name="cfHugging" value="0"/>
+<param name="mnVias" value="0"/>
+</pass>
+<pass name="Route" refer="Default" active="yes">
+</pass>
+<pass name="Optimize1" refer="Default" active="yes">
+<param name="cfVia" value="99"/>
+<param name="cfExtdStep" value="10"/>
+<param name="cfHugging" value="1"/>
+<param name="mnExtdSteps" value="1"/>
+<param name="mnRipupLevel" value="0"/>
+</pass>
+<pass name="Optimize2" refer="Optimize1" active="yes">
+<param name="cfNonPref" value="0"/>
+<param name="cfChangeDir" value="6"/>
+<param name="cfExtdStep" value="0"/>
+<param name="cfBonusStep" value="2"/>
+<param name="cfMalusStep" value="2"/>
+<param name="cfPadImpact" value="2"/>
+<param name="cfSmdImpact" value="2"/>
+<param name="cfHugging" value="0"/>
+</pass>
+<pass name="Optimize3" refer="Optimize2" active="yes">
+<param name="cfChangeDir" value="8"/>
+<param name="cfPadImpact" value="0"/>
+<param name="cfSmdImpact" value="0"/>
+</pass>
+<pass name="Optimize4" refer="Optimize3" active="yes">
+<param name="cfChangeDir" value="25"/>
+</pass>
+</autorouter>
+<elements>
+<element name="APA104-1" library="dc-26" package="APA104" value="APA104" x="26.76" y="90.5">
+<attribute name="3D_PACKAGE" value="" x="26.76" y="90.5" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="26.76" y="90.5" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="26.76" y="90.5" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="26.76" y="90.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="26.76" y="90.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="26.76" y="90.5" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="26.76" y="90.5" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="26.76" y="90.5" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="26.76" y="90.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-2" library="dc-26" package="APA104" value="APA104" x="19.3" y="95" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="19.3" y="95" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="19.3" y="95" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="19.3" y="95" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="19.3" y="95" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="19.3" y="95" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="19.3" y="95" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="19.3" y="95" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="19.3" y="95" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="19.3" y="95" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="C81" library="NameInLights" package="C0805" value="0.1uf" x="56.2" y="15.74"/>
+<element name="C82" library="NameInLights" package="C0805" value="10uf" x="51.12" y="15.74"/>
+<element name="C83" library="NameInLights" package="C0805" value="100nF" x="46.04" y="15.74"/>
+<element name="IC1" library="NameInLights" package="SOIC127P600X175-8N" value="ATTINY13A-SSU" x="32.06" y="21.81">
+<attribute name="ARROW_PART_NUMBER" value="ATTINY13A-SSU" x="32.06" y="21.81" size="1.778" layer="27" display="off"/>
+<attribute name="ARROW_PRICE/STOCK" value="https://www.arrow.com/en/products/attiny13a-ssu/microchip-technology" x="32.06" y="21.81" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="ATTINY13A-SSU, 8 bit AVR Microcontroller 20MHz 1, 64kB, B Flash, 64B RAM, SPI 8-Pin SOIC" x="32.06" y="21.81" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="1.75mm" x="32.06" y="21.81" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Microchip" x="32.06" y="21.81" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="ATTINY13A-SSU" x="32.06" y="21.81" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="9214573" x="32.06" y="21.81" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PRICE/STOCK" value="http://uk.rs-online.com/web/p/products/9214573" x="32.06" y="21.81" size="1.778" layer="27" display="off"/>
+</element>
+<element name="J1" library="NameInLights" package="1X08" value="" x="60.02" y="28.93" rot="R180">
+<attribute name="PROD_ID" value="CONN-08438" x="60.02" y="28.93" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="R1" library="NameInLights" package="0805" value="4K7" x="7.39" y="26.53" rot="R180"/>
+<element name="RESET" library="NameInLights" package="TACTILE-2PIN-NARROW" value="SWITCH_TACTILETACTILE-2PIN-NARROW" x="2.93" y="17.63" rot="R90"/>
+<element name="APA104-3" library="dc-26" package="APA104" value="APA104" x="11.5" y="92.5" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="12.77" y="92.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="12.77" y="92.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="12.77" y="92.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="12.77" y="92.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="12.77" y="92.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="12.77" y="92.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="12.77" y="92.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="12.77" y="92.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="12.77" y="92.5" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="APA104-4" library="dc-26" package="APA104" value="APA104" x="9.42" y="86">
+<attribute name="3D_PACKAGE" value="" x="8.15" y="86" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="8.15" y="86" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="8.15" y="86" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="8.15" y="86" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="8.15" y="86" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="8.15" y="86" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="8.15" y="86" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="8.15" y="86" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="8.15" y="86" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-5" library="dc-26" package="APA104" value="APA104" x="9.58" y="78" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="10.85" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="10.85" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="10.85" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="10.85" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="10.85" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="10.85" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="10.85" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="10.85" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="10.85" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="APA104-6" library="dc-26" package="APA104" value="APA104" x="14.42" y="71.5">
+<attribute name="3D_PACKAGE" value="" x="13.15" y="71.5" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="13.15" y="71.5" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="13.15" y="71.5" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="13.15" y="71.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="13.15" y="71.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="13.15" y="71.5" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="13.15" y="71.5" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="13.15" y="71.5" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="13.15" y="71.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-7" library="dc-26" package="APA104" value="APA104" x="22.08" y="71.5" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="23.35" y="71.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="23.35" y="71.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="23.35" y="71.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="23.35" y="71.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="23.35" y="71.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="23.35" y="71.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="23.35" y="71.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="23.35" y="71.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="23.35" y="71.5" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="APA104-8" library="dc-26" package="APA104" value="APA104" x="27.26" y="78" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="28.53" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="28.53" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="28.53" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="28.53" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="28.53" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="28.53" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="28.53" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="28.53" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="28.53" y="78" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="APA104-9" library="dc-26" package="APA104" value="APA104" x="38.58" y="72.39" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="APA104-10" library="dc-26" package="APA104" value="APA104" x="38.58" y="79.18">
+<attribute name="3D_PACKAGE" value="" x="37.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="37.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="37.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="37.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="37.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="37.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="37.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="37.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="37.31" y="79.18" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-11" library="dc-26" package="APA104" value="APA104" x="38.58" y="86.25" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="APA104-12" library="dc-26" package="APA104" value="APA104" x="38.58" y="92.82">
+<attribute name="3D_PACKAGE" value="" x="37.31" y="92.82" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="37.31" y="92.82" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="37.31" y="92.82" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="37.31" y="92.82" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="37.31" y="92.82" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="37.31" y="92.82" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="37.31" y="92.82" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="37.31" y="92.82" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="37.31" y="92.82" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-13" library="dc-26" package="APA104" value="APA104" x="45.11" y="87.42" rot="R110">
+<attribute name="3D_PACKAGE" value="" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="HEIGHT" value="mm" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
+</element>
+<element name="APA104-14" library="dc-26" package="APA104" value="APA104" x="47.92" y="79.96" rot="R110">
+<attribute name="3D_PACKAGE" value="" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="HEIGHT" value="mm" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
+</element>
+<element name="APA104-15" library="dc-26" package="APA104" value="APA104" x="51.08" y="72.97" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="52.35" y="72.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="52.35" y="72.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="52.35" y="72.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="52.35" y="72.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="52.35" y="72.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="52.35" y="72.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="52.35" y="72.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="52.35" y="72.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="52.35" y="72.97" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="APA104-16" library="dc-26" package="APA104" value="APA104" x="54.92" y="79.96" rot="R250">
+<attribute name="3D_PACKAGE" value="" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="HEIGHT" value="mm" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
+</element>
+<element name="APA104-17" library="dc-26" package="APA104" value="APA104" x="57.42" y="87.42" rot="R250">
+<attribute name="3D_PACKAGE" value="" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="HEIGHT" value="mm" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
+</element>
+<element name="APA104-18" library="dc-26" package="APA104" value="APA104" x="64.58" y="92.76" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="APA104-19" library="dc-26" package="APA104" value="APA104" x="64.58" y="86.25">
+<attribute name="3D_PACKAGE" value="" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-20" library="dc-26" package="APA104" value="APA104" x="64.58" y="79.18">
+<attribute name="3D_PACKAGE" value="" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-21" library="dc-26" package="APA104" value="APA104" x="64.58" y="72.61" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="APA104-22" library="dc-26" package="APA104" value="APA104" x="78.42" y="72.55" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="APA104-23" library="dc-26" package="APA104" value="APA104" x="78.42" y="79.55" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="APA104-24" library="dc-26" package="APA104" value="APA104" x="78.42" y="85.9" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="APA104-25" library="dc-26" package="APA104" value="APA104" x="78.42" y="92.4" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="APA104-26" library="dc-26" package="APA104" value="APA104" x="86.74" y="91.6">
+<attribute name="3D_PACKAGE" value="" x="39.75" y="66.2" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="39.75" y="66.2" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="39.75" y="66.2" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="39.75" y="66.2" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="39.75" y="66.2" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="39.75" y="66.2" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="39.75" y="66.2" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="39.75" y="66.2" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="39.75" y="66.2" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-27" library="dc-26" package="APA104" value="APA104" x="92.92" y="85.75">
+<attribute name="3D_PACKAGE" value="" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-28" library="dc-26" package="APA104" value="APA104" x="92.92" y="78.75">
+<attribute name="3D_PACKAGE" value="" x="45.93" y="47" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="45.93" y="47" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="45.93" y="47" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="45.93" y="47" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="45.93" y="47" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="45.93" y="47" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="45.93" y="47" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="45.93" y="47" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="45.93" y="47" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-29" library="dc-26" package="APA104" value="APA104" x="86.74" y="73.25">
+<attribute name="3D_PACKAGE" value="" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-30" library="dc-26" package="APA104" value="APA104" x="24.76" y="58">
+<attribute name="3D_PACKAGE" value="" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-31" library="dc-26" package="APA104" value="APA104" x="17.3" y="63">
+<attribute name="3D_PACKAGE" value="" x="16.03" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="16.03" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="16.03" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="16.03" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="16.03" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="16.03" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="16.03" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="16.03" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="16.03" y="63" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-32" library="dc-26" package="APA104" value="APA104" x="9.5" y="60.5">
+<attribute name="3D_PACKAGE" value="" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-33" library="dc-26" package="APA104" value="APA104" x="7.42" y="53.5">
+<attribute name="3D_PACKAGE" value="" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-34" library="dc-26" package="APA104" value="APA104" x="7.58" y="46">
+<attribute name="3D_PACKAGE" value="" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-35" library="dc-26" package="APA104" value="APA104" x="12.42" y="39">
+<attribute name="3D_PACKAGE" value="" x="-19.33" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-19.33" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-19.33" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-19.33" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-19.33" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-19.33" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-19.33" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-19.33" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-19.33" y="19.95" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-36" library="dc-26" package="APA104" value="APA104" x="20.08" y="39">
+<attribute name="3D_PACKAGE" value="" x="-26.91" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-26.91" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-26.91" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-26.91" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-26.91" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-26.91" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-26.91" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-26.91" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-26.91" y="13.6" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-37" library="dc-26" package="APA104" value="APA104" x="25.26" y="45.5">
+<attribute name="3D_PACKAGE" value="" x="-6.49" y="20.1" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-6.49" y="20.1" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-6.49" y="20.1" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-6.49" y="20.1" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-6.49" y="20.1" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-6.49" y="20.1" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-6.49" y="20.1" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-6.49" y="20.1" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-6.49" y="20.1" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-38" library="dc-26" package="APA104" value="APA104" x="36.42" y="44.69">
+<attribute name="3D_PACKAGE" value="" x="-10.57" y="12.94" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-10.57" y="12.94" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-10.57" y="12.94" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-10.57" y="12.94" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-10.57" y="12.94" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-10.57" y="12.94" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-10.57" y="12.94" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-10.57" y="12.94" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-10.57" y="12.94" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-39" library="dc-26" package="APA104" value="APA104" x="34.74" y="51.07">
+<attribute name="3D_PACKAGE" value="" x="-27.49" y="12.97" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-27.49" y="12.97" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-27.49" y="12.97" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-27.49" y="12.97" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-27.49" y="12.97" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-27.49" y="12.97" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-27.49" y="12.97" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-27.49" y="12.97" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-27.49" y="12.97" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-40" library="dc-26" package="APA104" value="APA104" x="36.42" y="57.84">
+<attribute name="3D_PACKAGE" value="" x="-10.57" y="19.74" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-10.57" y="19.74" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-10.57" y="19.74" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-10.57" y="19.74" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-10.57" y="19.74" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-10.57" y="19.74" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-10.57" y="19.74" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-10.57" y="19.74" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-10.57" y="19.74" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-41" library="dc-26" package="APA104" value="APA104" x="43.42" y="63">
+<attribute name="3D_PACKAGE" value="" x="42.15" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="42.15" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="42.15" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="42.15" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="42.15" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="42.15" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="42.15" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="42.15" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="42.15" y="63" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-42" library="dc-26" package="APA104" value="APA104" x="50.58" y="57.84">
+<attribute name="3D_PACKAGE" value="" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-43" library="dc-26" package="APA104" value="APA104" x="52.24" y="51.07">
+<attribute name="3D_PACKAGE" value="" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-44" library="dc-26" package="APA104" value="APA104" x="50.58" y="44.69">
+<attribute name="3D_PACKAGE" value="" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-45" library="dc-26" package="APA104" value="APA104" x="43.42" y="39">
+<attribute name="3D_PACKAGE" value="" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-46" library="dc-26" package="APA104" value="APA104" x="61.42" y="39">
+<attribute name="3D_PACKAGE" value="" x="24.59" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="24.59" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="24.59" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="24.59" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="24.59" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="24.59" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="24.59" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="24.59" y="13.6" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="24.59" y="13.6" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-47" library="dc-26" package="APA104" value="APA104" x="61.42" y="47">
+<attribute name="3D_PACKAGE" value="" x="9.35" y="15.25" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="9.35" y="15.25" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="9.35" y="15.25" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="9.35" y="15.25" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="9.35" y="15.25" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="9.35" y="15.25" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="9.35" y="15.25" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="9.35" y="15.25" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="9.35" y="15.25" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-48" library="dc-26" package="APA104" value="APA104" x="61.42" y="55">
+<attribute name="3D_PACKAGE" value="" x="-5.89" y="16.9" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-5.89" y="16.9" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-5.89" y="16.9" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-5.89" y="16.9" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-5.89" y="16.9" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-5.89" y="16.9" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-5.89" y="16.9" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-5.89" y="16.9" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-5.89" y="16.9" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-49" library="dc-26" package="APA104" value="APA104" x="61.42" y="63">
+<attribute name="3D_PACKAGE" value="" x="19.51" y="24.9" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="19.51" y="24.9" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="19.51" y="24.9" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="19.51" y="24.9" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="19.51" y="24.9" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="19.51" y="24.9" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="19.51" y="24.9" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="19.51" y="24.9" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="19.51" y="24.9" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-50" library="dc-26" package="APA104" value="APA104" x="70.08" y="61.5">
+<attribute name="3D_PACKAGE" value="" x="12.93" y="17.05" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="12.93" y="17.05" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="12.93" y="17.05" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="12.93" y="17.05" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="12.93" y="17.05" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="12.93" y="17.05" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="12.93" y="17.05" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="12.93" y="17.05" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="12.93" y="17.05" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-51" library="dc-26" package="APA104" value="APA104" x="77" y="55.13">
+<attribute name="3D_PACKAGE" value="" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-52" library="dc-26" package="APA104" value="APA104" x="77" y="47.13">
+<attribute name="3D_PACKAGE" value="" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-53" library="dc-26" package="APA104" value="APA104" x="70.08" y="41">
+<attribute name="3D_PACKAGE" value="" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-54" library="dc-26" package="APA104" value="APA104" x="86.58" y="39">
+<attribute name="3D_PACKAGE" value="" x="9.11" y="-24.5" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="9.11" y="-24.5" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="9.11" y="-24.5" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="9.11" y="-24.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="9.11" y="-24.5" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="9.11" y="-24.5" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="9.11" y="-24.5" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="9.11" y="-24.5" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="9.11" y="-24.5" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-55" library="dc-26" package="APA104" value="APA104" x="86.74" y="47">
+<attribute name="3D_PACKAGE" value="" x="-5.97" y="-22.85" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-5.97" y="-22.85" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-5.97" y="-22.85" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-5.97" y="-22.85" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-5.97" y="-22.85" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-5.97" y="-22.85" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-5.97" y="-22.85" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-5.97" y="-22.85" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-5.97" y="-22.85" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-56" library="dc-26" package="APA104" value="APA104" x="86.9" y="55">
+<attribute name="3D_PACKAGE" value="" x="-21.05" y="-21.2" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-21.05" y="-21.2" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-21.05" y="-21.2" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-21.05" y="-21.2" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-21.05" y="-21.2" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-21.05" y="-21.2" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-21.05" y="-21.2" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-21.05" y="-21.2" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-21.05" y="-21.2" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-57" library="dc-26" package="APA104" value="APA104" x="86.92" y="63">
+<attribute name="3D_PACKAGE" value="" x="4.37" y="-13.2" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="4.37" y="-13.2" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="4.37" y="-13.2" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="4.37" y="-13.2" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="4.37" y="-13.2" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="4.37" y="-13.2" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="4.37" y="-13.2" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="4.37" y="-13.2" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="4.37" y="-13.2" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-58" library="dc-26" package="APA104" value="APA104" x="94.58" y="63">
+<attribute name="3D_PACKAGE" value="" x="-3.21" y="-19.55" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-3.21" y="-19.55" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-3.21" y="-19.55" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-3.21" y="-19.55" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-3.21" y="-19.55" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-3.21" y="-19.55" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-3.21" y="-19.55" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-3.21" y="-19.55" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-3.21" y="-19.55" size="1.778" layer="27" display="off"/>
+</element>
+<element name="APA104-59" library="dc-26" package="APA104" value="APA104" x="94.76" y="51.07" rot="R180">
+<attribute name="3D_PACKAGE" value="" x="207.79" y="139.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="207.79" y="139.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="207.79" y="139.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="HEIGHT" value="mm" x="207.79" y="139.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="207.79" y="139.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="207.79" y="139.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="207.79" y="139.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="207.79" y="139.97" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="207.79" y="139.97" size="1.778" layer="27" rot="R180" display="off"/>
+</element>
+<element name="APA104-60" library="dc-26" package="APA104" value="APA104" x="94.9" y="39">
+<attribute name="3D_PACKAGE" value="" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
+<attribute name="ALLIED_NUMBER" value="" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
+<attribute name="DESCRIPTION" value="APA104 LED Chip" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
+<attribute name="HEIGHT" value="mm" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
+<attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
+<attribute name="OTHER_PART_NUMBER" value="" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
+<attribute name="RS_PART_NUMBER" value="" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
+<attribute name="SUPPLIER_NAME" value="RS" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
+</element>
+<element name="J2" library="name-in-lights" package="1X02" value="" x="80.05" y="22.12" rot="R270"/>
+<element name="C-L-1" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="30" y="18"/>
+<element name="C-L-2" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="146"/>
+<element name="C-L-4" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="143"/>
+<element name="C-L-3" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="140"/>
+<element name="C-L-5" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="137"/>
+<element name="C-L-6" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="134"/>
+<element name="C-L-7" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="131"/>
+<element name="C-L-8" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="128"/>
+<element name="C-L9" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="125"/>
+<element name="C-L-10" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="122"/>
+<element name="C-L-11" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="119"/>
+<element name="C-L-12" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="116"/>
+<element name="C-L-13" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="113"/>
+<element name="C-L-14" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="110"/>
+<element name="C-L-15" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="107"/>
+<element name="C-L-16" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="104"/>
+<element name="C-L-17" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="101"/>
+<element name="C-L-18" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="98"/>
+<element name="C-L-19" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="95"/>
+<element name="C-L-20" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="92"/>
+<element name="C-L-21" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="89"/>
+<element name="C-L-22" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="86"/>
+<element name="C-L-23" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="83"/>
+<element name="C-L-24" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="80"/>
+<element name="C-L-25" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="77"/>
+<element name="C-L-26" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="74"/>
+<element name="C-L-27" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="71"/>
+<element name="C-L-28" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="68"/>
+<element name="C-L-29" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="65"/>
+<element name="C-L-30" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="62"/>
+<element name="C-L-31" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="59"/>
+<element name="C-L-32" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="56"/>
+<element name="C-L-33" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="53"/>
+<element name="C-L-34" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="50"/>
+<element name="C-L-35" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="47"/>
+<element name="C-L-36" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="44"/>
+<element name="C-L-37" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="41"/>
+<element name="C-L-38" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="38"/>
+<element name="C-L-39" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="35"/>
+<element name="C-L-40" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="32"/>
+<element name="C-L-41" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="29"/>
+<element name="C-L-42" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="26"/>
+<element name="C-L-43" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="23"/>
+<element name="C-L-44" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="20"/>
+<element name="C-L-45" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="17"/>
+<element name="C-L-46" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="14"/>
+<element name="C-L-47" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="11"/>
+<element name="C-L-48" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="8"/>
+<element name="C-L-49" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="5"/>
+<element name="C-L-50" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="2"/>
+<element name="C-L-51" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="-1"/>
+<element name="C-L-52" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="-4"/>
+<element name="C-L-53" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="-7"/>
+<element name="C-L-54" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="-10"/>
+<element name="C-L-55" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="-13"/>
+<element name="C-L-56" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="-16"/>
+<element name="C-L-57" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="-19"/>
+<element name="C-L-58" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="-22"/>
+<element name="C-L-59" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="-25"/>
+<element name="C-L-60" library="name-in-lights" package="C0805-VOLTA" value="" x="-14" y="-28"/>
+</elements>
+<signals>
+<signal name="GND" airwireshidden="yes">
+<contactref element="APA104-1" pad="3"/>
+<contactref element="APA104-2" pad="3"/>
+<contactref element="C82" pad="1"/>
+<contactref element="C81" pad="1"/>
+<contactref element="IC1" pad="4"/>
+<contactref element="J1" pad="8"/>
+<contactref element="C83" pad="2"/>
+<contactref element="RESET" pad="P$1"/>
+<contactref element="APA104-3" pad="3"/>
+<contactref element="APA104-4" pad="3"/>
+<contactref element="APA104-5" pad="3"/>
+<contactref element="APA104-6" pad="3"/>
+<contactref element="APA104-7" pad="3"/>
+<contactref element="APA104-8" pad="3"/>
+<contactref element="APA104-9" pad="3"/>
+<contactref element="APA104-10" pad="3"/>
+<contactref element="APA104-11" pad="3"/>
+<contactref element="APA104-12" pad="3"/>
+<contactref element="APA104-13" pad="3"/>
+<contactref element="APA104-14" pad="3"/>
+<contactref element="APA104-15" pad="3"/>
+<contactref element="APA104-16" pad="3"/>
+<contactref element="APA104-17" pad="3"/>
+<contactref element="APA104-18" pad="3"/>
+<contactref element="APA104-19" pad="3"/>
+<contactref element="APA104-20" pad="3"/>
+<contactref element="APA104-21" pad="3"/>
+<contactref element="APA104-22" pad="3"/>
+<contactref element="APA104-23" pad="3"/>
+<contactref element="APA104-24" pad="3"/>
+<contactref element="APA104-25" pad="3"/>
+<contactref element="APA104-26" pad="3"/>
+<contactref element="APA104-27" pad="3"/>
+<contactref element="APA104-28" pad="3"/>
+<contactref element="APA104-29" pad="3"/>
+<contactref element="APA104-30" pad="3"/>
+<contactref element="APA104-31" pad="3"/>
+<contactref element="APA104-32" pad="3"/>
+<contactref element="APA104-33" pad="3"/>
+<contactref element="APA104-34" pad="3"/>
+<contactref element="APA104-35" pad="3"/>
+<contactref element="APA104-36" pad="3"/>
+<contactref element="APA104-37" pad="3"/>
+<contactref element="APA104-38" pad="3"/>
+<contactref element="APA104-39" pad="3"/>
+<contactref element="APA104-40" pad="3"/>
+<contactref element="APA104-41" pad="3"/>
+<contactref element="APA104-42" pad="3"/>
+<contactref element="APA104-43" pad="3"/>
+<contactref element="APA104-44" pad="3"/>
+<contactref element="APA104-45" pad="3"/>
+<contactref element="APA104-46" pad="3"/>
+<contactref element="APA104-47" pad="3"/>
+<contactref element="APA104-48" pad="3"/>
+<contactref element="APA104-49" pad="3"/>
+<contactref element="APA104-50" pad="3"/>
+<contactref element="APA104-51" pad="3"/>
+<contactref element="APA104-52" pad="3"/>
+<contactref element="APA104-53" pad="3"/>
+<contactref element="APA104-54" pad="3"/>
+<contactref element="APA104-55" pad="3"/>
+<contactref element="APA104-56" pad="3"/>
+<contactref element="APA104-57" pad="3"/>
+<contactref element="APA104-58" pad="3"/>
+<contactref element="APA104-59" pad="3"/>
+<contactref element="APA104-60" pad="3"/>
+<contactref element="J2" pad="2"/>
+<contactref element="C-L-1" pad="1"/>
+<contactref element="C-L-2" pad="2"/>
+<contactref element="C-L-3" pad="2"/>
+<contactref element="C-L-4" pad="2"/>
+<contactref element="C-L-5" pad="2"/>
+<contactref element="C-L-6" pad="2"/>
+<contactref element="C-L-7" pad="2"/>
+<contactref element="C-L-8" pad="2"/>
+<contactref element="C-L9" pad="2"/>
+<contactref element="C-L-10" pad="2"/>
+<contactref element="C-L-11" pad="2"/>
+<contactref element="C-L-12" pad="2"/>
+<contactref element="C-L-13" pad="2"/>
+<contactref element="C-L-14" pad="2"/>
+<contactref element="C-L-15" pad="2"/>
+<contactref element="C-L-16" pad="2"/>
+<contactref element="C-L-17" pad="2"/>
+<contactref element="C-L-18" pad="2"/>
+<contactref element="C-L-19" pad="2"/>
+<contactref element="C-L-20" pad="2"/>
+<contactref element="C-L-21" pad="2"/>
+<contactref element="C-L-22" pad="2"/>
+<contactref element="C-L-23" pad="2"/>
+<contactref element="C-L-24" pad="2"/>
+<contactref element="C-L-25" pad="2"/>
+<contactref element="C-L-26" pad="2"/>
+<contactref element="C-L-27" pad="2"/>
+<contactref element="C-L-28" pad="2"/>
+<contactref element="C-L-29" pad="2"/>
+<contactref element="C-L-30" pad="2"/>
+<contactref element="C-L-31" pad="2"/>
+<contactref element="C-L-32" pad="2"/>
+<contactref element="C-L-33" pad="2"/>
+<contactref element="C-L-34" pad="2"/>
+<contactref element="C-L-35" pad="2"/>
+<contactref element="C-L-36" pad="2"/>
+<contactref element="C-L-37" pad="2"/>
+<contactref element="C-L-38" pad="2"/>
+<contactref element="C-L-39" pad="2"/>
+<contactref element="C-L-40" pad="2"/>
+<contactref element="C-L-41" pad="2"/>
+<contactref element="C-L-42" pad="2"/>
+<contactref element="C-L-43" pad="2"/>
+<contactref element="C-L-44" pad="2"/>
+<contactref element="C-L-45" pad="2"/>
+<contactref element="C-L-46" pad="2"/>
+<contactref element="C-L-47" pad="2"/>
+<contactref element="C-L-48" pad="2"/>
+<contactref element="C-L-49" pad="2"/>
+<contactref element="C-L-50" pad="2"/>
+<contactref element="C-L-51" pad="2"/>
+<contactref element="C-L-52" pad="2"/>
+<contactref element="C-L-53" pad="2"/>
+<contactref element="C-L-54" pad="2"/>
+<contactref element="C-L-55" pad="2"/>
+<contactref element="C-L-56" pad="2"/>
+<contactref element="C-L-57" pad="2"/>
+<contactref element="C-L-58" pad="2"/>
+<contactref element="C-L-59" pad="2"/>
+<contactref element="C-L-60" pad="2"/>
+<wire x1="95.32" y1="84.15" x2="89.14" y2="90" width="0" layer="19" extent="1-1"/>
+<wire x1="95.32" y1="77.15" x2="95.32" y2="84.15" width="0" layer="19" extent="1-1"/>
+<wire x1="89.14" y1="71.65" x2="95.32" y2="77.15" width="0" layer="19" extent="1-1"/>
+<wire x1="89.32" y1="61.4" x2="89.14" y2="71.65" width="0" layer="19" extent="1-1"/>
+<wire x1="89.3" y1="53.4" x2="89.32" y2="61.4" width="0" layer="19" extent="1-1"/>
+<wire x1="92.36" y1="52.67" x2="89.3" y2="53.4" width="0" layer="19" extent="1-1"/>
+<wire x1="89.14" y1="45.4" x2="89.3" y2="53.4" width="0" layer="19" extent="1-1"/>
+<wire x1="88.98" y1="37.4" x2="89.14" y2="45.4" width="0" layer="19" extent="1-1"/>
+<wire x1="96.98" y1="61.4" x2="89.32" y2="61.4" width="0" layer="19" extent="1-1"/>
+<wire x1="97.3" y1="37.4" x2="88.98" y2="37.4" width="0" layer="19" extent="1-1"/>
+<wire x1="79.4" y1="45.53" x2="89.14" y2="45.4" width="0" layer="19" extent="1-1"/>
+<wire x1="79.4" y1="53.53" x2="79.4" y2="45.53" width="0" layer="19" extent="1-1"/>
+<wire x1="72.48" y1="59.9" x2="79.4" y2="53.53" width="0" layer="19" extent="1-1"/>
+<wire x1="63.82" y1="61.4" x2="72.48" y2="59.9" width="0" layer="19" extent="1-1"/>
+<wire x1="63.82" y1="53.4" x2="63.82" y2="61.4" width="0" layer="19" extent="1-1"/>
+<wire x1="63.82" y1="45.4" x2="63.82" y2="53.4" width="0" layer="19" extent="1-1"/>
+<wire x1="63.82" y1="37.4" x2="63.82" y2="45.4" width="0" layer="19" extent="1-1"/>
+<wire x1="72.48" y1="39.4" x2="63.82" y2="37.4" width="0" layer="19" extent="1-1"/>
+<wire x1="54.64" y1="49.47" x2="63.82" y2="45.4" width="0" layer="19" extent="1-1"/>
+<wire x1="52.98" y1="56.24" x2="54.64" y2="49.47" width="0" layer="19" extent="1-1"/>
+<wire x1="52.98" y1="43.09" x2="54.64" y2="49.47" width="0" layer="19" extent="1-1"/>
+<wire x1="45.82" y1="61.4" x2="52.98" y2="56.24" width="0" layer="19" extent="1-1"/>
+<wire x1="38.82" y1="56.24" x2="45.82" y2="61.4" width="0" layer="19" extent="1-1"/>
+<wire x1="37.14" y1="49.47" x2="38.82" y2="56.24" width="0" layer="19" extent="1-1"/>
+<wire x1="38.82" y1="43.09" x2="37.14" y2="49.47" width="0" layer="19" extent="1-1"/>
+<wire x1="45.82" y1="37.4" x2="38.82" y2="43.09" width="0" layer="19" extent="1-1"/>
+<wire x1="42.24" y1="28.93" x2="45.82" y2="37.4" width="0" layer="19" extent="1-1"/>
+<wire x1="27.66" y1="43.9" x2="38.82" y2="43.09" width="0" layer="19" extent="1-1"/>
+<wire x1="22.48" y1="37.4" x2="27.66" y2="43.9" width="0" layer="19" extent="1-1"/>
+<wire x1="14.82" y1="37.4" x2="22.48" y2="37.4" width="0" layer="19" extent="1-1"/>
+<wire x1="9.98" y1="44.4" x2="14.82" y2="37.4" width="0" layer="19" extent="1-1"/>
+<wire x1="9.82" y1="51.9" x2="9.98" y2="44.4" width="0" layer="19" extent="1-1"/>
+<wire x1="11.9" y1="58.9" x2="9.82" y2="51.9" width="0" layer="19" extent="1-1"/>
+<wire x1="19.7" y1="61.4" x2="11.9" y2="58.9" width="0" layer="19" extent="1-1"/>
+<wire x1="29.348" y1="19.905" x2="22.48" y2="37.4" width="0" layer="19" extent="1-1"/>
+<wire x1="27.16" y1="56.4" x2="19.7" y2="61.4" width="0" layer="19" extent="1-1"/>
+<wire x1="2.93" y1="20.8939" x2="9.98" y2="44.4" width="0" layer="19" extent="1-1"/>
+<wire x1="29.1364" y1="18" x2="29.348" y2="19.905" width="0" layer="19" extent="1-1"/>
+<wire x1="16.82" y1="69.9" x2="19.7" y2="61.4" width="0" layer="19" extent="1-1"/>
+<wire x1="19.68" y1="73.1" x2="16.82" y2="69.9" width="0" layer="19" extent="1-1"/>
+<wire x1="24.86" y1="79.6" x2="19.68" y2="73.1" width="0" layer="19" extent="1-1"/>
+<wire x1="36.18" y1="73.99" x2="24.86" y2="79.6" width="0" layer="19" extent="1-1"/>
+<wire x1="40.98" y1="77.58" x2="36.18" y2="73.99" width="0" layer="19" extent="1-1"/>
+<wire x1="48.68" y1="74.57" x2="40.98" y2="77.58" width="0" layer="19" extent="1-1"/>
+<wire x1="52.595640625" y1="78.25196875" x2="48.68" y2="74.57" width="0" layer="19" extent="1-1"/>
+<wire x1="48.602659375" y1="82.76249375" x2="52.595640625" y2="78.25196875" width="0" layer="19" extent="1-1"/>
+<wire x1="55.095640625" y1="85.71196875" x2="48.602659375" y2="82.76249375" width="0" layer="19" extent="1-1"/>
+<wire x1="45.792659375" y1="90.22249375" x2="48.602659375" y2="82.76249375" width="0" layer="19" extent="1-1"/>
+<wire x1="40.98" y1="91.22" x2="45.792659375" y2="90.22249375" width="0" layer="19" extent="1-1"/>
+<wire x1="36.18" y1="87.85" x2="40.98" y2="91.22" width="0" layer="19" extent="1-1"/>
+<wire x1="29.16" y1="88.9" x2="36.18" y2="87.85" width="0" layer="19" extent="1-1"/>
+<wire x1="62.18" y1="74.21" x2="52.595640625" y2="78.25196875" width="0" layer="19" extent="1-1"/>
+<wire x1="66.98" y1="77.58" x2="62.18" y2="74.21" width="0" layer="19" extent="1-1"/>
+<wire x1="66.98" y1="84.65" x2="66.98" y2="77.58" width="0" layer="19" extent="1-1"/>
+<wire x1="76.02" y1="87.5" x2="66.98" y2="84.65" width="0" layer="19" extent="1-1"/>
+<wire x1="76.02" y1="81.15" x2="76.02" y2="87.5" width="0" layer="19" extent="1-1"/>
+<wire x1="76.02" y1="94" x2="76.02" y2="87.5" width="0" layer="19" extent="1-1"/>
+<wire x1="76.02" y1="74.15" x2="76.02" y2="81.15" width="0" layer="19" extent="1-1"/>
+<wire x1="62.18" y1="94.36" x2="66.98" y2="84.65" width="0" layer="19" extent="1-1"/>
+<wire x1="80.05" y1="19.58" x2="72.48" y2="39.4" width="0" layer="19" extent="1-1"/>
+<wire x1="11.82" y1="84.4" x2="19.68" y2="73.1" width="0" layer="19" extent="1-1"/>
+<wire x1="7.18" y1="79.6" x2="11.82" y2="84.4" width="0" layer="19" extent="1-1"/>
+<wire x1="9.1" y1="94.1" x2="11.82" y2="84.4" width="0" layer="19" extent="1-1"/>
+<wire x1="16.9" y1="96.6" x2="9.1" y2="94.1" width="0" layer="19" extent="1-1"/>
+<wire x1="46.89" y1="15.74" x2="42.24" y2="28.93" width="0" layer="19" extent="1-1"/>
+<wire x1="50.27" y1="15.74" x2="46.89" y2="15.74" width="0" layer="19" extent="1-1"/>
+<wire x1="55.35" y1="15.74" x2="50.27" y2="15.74" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="35" x2="2.93" y2="20.8939" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="38" x2="-13.1364" y2="35" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="41" x2="-13.1364" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="44" x2="-13.1364" y2="41" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="47" x2="-13.1364" y2="44" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="50" x2="-13.1364" y2="47" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="53" x2="-13.1364" y2="50" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="56" x2="-13.1364" y2="53" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="59" x2="-13.1364" y2="56" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="62" x2="-13.1364" y2="59" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="65" x2="-13.1364" y2="62" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="68" x2="-13.1364" y2="65" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="71" x2="-13.1364" y2="68" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="74" x2="-13.1364" y2="71" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="77" x2="-13.1364" y2="74" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="80" x2="-13.1364" y2="77" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="83" x2="-13.1364" y2="80" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="86" x2="-13.1364" y2="83" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="89" x2="-13.1364" y2="86" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="92" x2="-13.1364" y2="89" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="95" x2="-13.1364" y2="92" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="98" x2="-13.1364" y2="95" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="101" x2="-13.1364" y2="98" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="104" x2="-13.1364" y2="101" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="107" x2="-13.1364" y2="104" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="110" x2="-13.1364" y2="107" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="113" x2="-13.1364" y2="110" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="116" x2="-13.1364" y2="113" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="119" x2="-13.1364" y2="116" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="122" x2="-13.1364" y2="119" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="125" x2="-13.1364" y2="122" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="128" x2="-13.1364" y2="125" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="131" x2="-13.1364" y2="128" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="134" x2="-13.1364" y2="131" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="137" x2="-13.1364" y2="134" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="140" x2="-13.1364" y2="137" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="143" x2="-13.1364" y2="140" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="146" x2="-13.1364" y2="143" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="32" x2="-13.1364" y2="35" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="29" x2="-13.1364" y2="32" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="26" x2="-13.1364" y2="29" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="23" x2="-13.1364" y2="26" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="20" x2="-13.1364" y2="23" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="17" x2="-13.1364" y2="20" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="14" x2="-13.1364" y2="17" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="11" x2="-13.1364" y2="14" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="8" x2="-13.1364" y2="11" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="5" x2="-13.1364" y2="8" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="2" x2="-13.1364" y2="5" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="-1" x2="-13.1364" y2="2" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="-4" x2="-13.1364" y2="-1" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="-7" x2="-13.1364" y2="-4" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="-10" x2="-13.1364" y2="-7" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="-13" x2="-13.1364" y2="-10" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="-16" x2="-13.1364" y2="-13" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="-19" x2="-13.1364" y2="-16" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="-22" x2="-13.1364" y2="-19" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="-25" x2="-13.1364" y2="-22" width="0" layer="19" extent="1-1"/>
+<wire x1="-13.1364" y1="-28" x2="-13.1364" y2="-25" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GPIO_APA106_DATA" airwireshidden="yes">
+<contactref element="J1" pad="7"/>
+</signal>
+<signal name="GPIO_APA104_DATA" airwireshidden="yes">
+<contactref element="APA104-1" pad="4"/>
+<contactref element="IC1" pad="3"/>
+<wire x1="29.348" y1="21.175" x2="29.16" y2="92.1" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$31" airwireshidden="yes">
+<contactref element="APA104-2" pad="4"/>
+<contactref element="APA104-1" pad="2"/>
+<wire x1="24.36" y1="88.9" x2="16.9" y2="93.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VCC" airwireshidden="yes">
+<contactref element="J1" pad="1"/>
+<contactref element="R1" pad="1"/>
+<contactref element="IC1" pad="8"/>
+<contactref element="C81" pad="2"/>
+<contactref element="C82" pad="2"/>
+<contactref element="J2" pad="1"/>
+<wire x1="34.772" y1="23.715" x2="80.05" y2="22.12" width="0" layer="19" extent="1-1"/>
+<wire x1="60.02" y1="28.93" x2="34.772" y2="23.715" width="0" layer="19" extent="1-1"/>
+<wire x1="57.05" y1="15.74" x2="60.02" y2="28.93" width="0" layer="19" extent="1-1"/>
+<wire x1="51.97" y1="15.74" x2="57.05" y2="15.74" width="0" layer="19" extent="1-1"/>
+<wire x1="8.29" y1="26.53" x2="51.97" y2="15.74" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PB2-SCK" airwireshidden="yes">
+<contactref element="IC1" pad="7"/>
+<contactref element="J1" pad="4"/>
+<wire x1="34.772" y1="22.445" x2="52.4" y2="28.93" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PB1-MISO" airwireshidden="yes">
+<contactref element="IC1" pad="6"/>
+<contactref element="J1" pad="5"/>
+<wire x1="34.772" y1="21.175" x2="49.86" y2="28.93" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PB0-MOSI" airwireshidden="yes">
+<contactref element="IC1" pad="5"/>
+<contactref element="J1" pad="6"/>
+<wire x1="34.772" y1="19.905" x2="47.32" y2="28.93" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PB3" airwireshidden="yes">
+<contactref element="IC1" pad="2"/>
+<contactref element="J1" pad="3"/>
+<wire x1="54.94" y1="28.93" x2="29.348" y2="22.445" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="RESET" airwireshidden="yes">
+<contactref element="IC1" pad="1"/>
+<contactref element="J1" pad="2"/>
+<contactref element="R1" pad="2"/>
+<contactref element="RESET" pad="P$2"/>
+<contactref element="C83" pad="1"/>
+<wire x1="57.48" y1="28.93" x2="29.348" y2="23.715" width="0" layer="19" extent="1-1"/>
+<wire x1="2.93" y1="14.3661" x2="57.48" y2="28.93" width="0" layer="19" extent="1-1"/>
+<wire x1="45.19" y1="15.74" x2="2.93" y2="14.3661" width="0" layer="19" extent="1-1"/>
+<wire x1="6.49" y1="26.53" x2="45.19" y2="15.74" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$1" airwireshidden="yes">
+<contactref element="APA104-3" pad="4"/>
+<contactref element="APA104-2" pad="2"/>
+<wire x1="21.7" y1="96.6" x2="9.1" y2="90.9" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$2" airwireshidden="yes">
+<contactref element="APA104-4" pad="4"/>
+<contactref element="APA104-3" pad="2"/>
+<wire x1="13.9" y1="94.1" x2="11.82" y2="87.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$3" airwireshidden="yes">
+<contactref element="APA104-5" pad="4"/>
+<contactref element="APA104-4" pad="2"/>
+<wire x1="7.02" y1="84.4" x2="7.18" y2="76.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$4" airwireshidden="yes">
+<contactref element="APA104-6" pad="4"/>
+<contactref element="APA104-5" pad="2"/>
+<wire x1="11.98" y1="79.6" x2="16.82" y2="73.1" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$5" airwireshidden="yes">
+<contactref element="APA104-7" pad="4"/>
+<contactref element="APA104-6" pad="2"/>
+<wire x1="12.02" y1="69.9" x2="19.68" y2="69.9" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$6" airwireshidden="yes">
+<contactref element="APA104-8" pad="4"/>
+<contactref element="APA104-7" pad="2"/>
+<wire x1="24.48" y1="73.1" x2="24.86" y2="76.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$7" airwireshidden="yes">
+<contactref element="APA104-9" pad="4"/>
+<contactref element="APA104-8" pad="2"/>
+<wire x1="29.66" y1="79.6" x2="36.18" y2="70.79" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$8" airwireshidden="yes">
+<contactref element="APA104-10" pad="4"/>
+<contactref element="APA104-9" pad="2"/>
+<wire x1="40.98" y1="73.99" x2="40.98" y2="80.78" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$9" airwireshidden="yes">
+<contactref element="APA104-10" pad="2"/>
+<contactref element="APA104-11" pad="4"/>
+<wire x1="36.18" y1="77.58" x2="36.18" y2="84.65" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$10" airwireshidden="yes">
+<contactref element="APA104-11" pad="2"/>
+<contactref element="APA104-12" pad="4"/>
+<wire x1="40.98" y1="87.85" x2="40.98" y2="94.42" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$11" airwireshidden="yes">
+<contactref element="APA104-13" pad="4"/>
+<contactref element="APA104-12" pad="2"/>
+<wire x1="36.18" y1="91.22" x2="42.785640625" y2="89.128028125" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$12" airwireshidden="yes">
+<contactref element="APA104-14" pad="4"/>
+<contactref element="APA104-13" pad="2"/>
+<wire x1="47.43435625" y1="85.71196875" x2="45.595640625" y2="81.668028125" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$13" airwireshidden="yes">
+<contactref element="APA104-15" pad="4"/>
+<contactref element="APA104-14" pad="2"/>
+<wire x1="50.24435625" y1="78.25196875" x2="48.68" y2="71.37" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$14" airwireshidden="yes">
+<contactref element="APA104-16" pad="4"/>
+<contactref element="APA104-15" pad="2"/>
+<wire x1="53.48" y1="74.57" x2="55.602659375" y2="77.157503125" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$15" airwireshidden="yes">
+<contactref element="APA104-17" pad="4"/>
+<contactref element="APA104-16" pad="2"/>
+<wire x1="54.2373375" y1="82.76249375" x2="58.102659375" y2="84.617503125" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$16" airwireshidden="yes">
+<contactref element="APA104-18" pad="4"/>
+<contactref element="APA104-17" pad="2"/>
+<wire x1="56.7373375" y1="90.22249375" x2="62.18" y2="91.16" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$17" airwireshidden="yes">
+<contactref element="APA104-19" pad="4"/>
+<contactref element="APA104-18" pad="2"/>
+<wire x1="66.98" y1="94.36" x2="66.98" y2="87.85" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$18" airwireshidden="yes">
+<contactref element="APA104-20" pad="4"/>
+<contactref element="APA104-19" pad="2"/>
+<wire x1="62.18" y1="84.65" x2="66.98" y2="80.78" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$19" airwireshidden="yes">
+<contactref element="APA104-22" pad="4"/>
+<contactref element="APA104-21" pad="2"/>
+<wire x1="76.02" y1="70.95" x2="66.98" y2="74.21" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$20" airwireshidden="yes">
+<contactref element="APA104-23" pad="4"/>
+<contactref element="APA104-22" pad="2"/>
+<wire x1="80.82" y1="74.15" x2="76.02" y2="77.95" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$21" airwireshidden="yes">
+<contactref element="APA104-24" pad="4"/>
+<contactref element="APA104-23" pad="2"/>
+<wire x1="80.82" y1="81.15" x2="76.02" y2="84.3" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$22" airwireshidden="yes">
+<contactref element="APA104-25" pad="4"/>
+<contactref element="APA104-24" pad="2"/>
+<wire x1="76.02" y1="90.8" x2="80.82" y2="87.5" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$23" airwireshidden="yes">
+<contactref element="APA104-26" pad="4"/>
+<contactref element="APA104-25" pad="2"/>
+<wire x1="89.14" y1="93.2" x2="80.82" y2="94" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$24" airwireshidden="yes">
+<contactref element="APA104-27" pad="4"/>
+<contactref element="APA104-26" pad="2"/>
+<wire x1="84.34" y1="90" x2="95.32" y2="87.35" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$25" airwireshidden="yes">
+<contactref element="APA104-28" pad="4"/>
+<contactref element="APA104-27" pad="2"/>
+<wire x1="95.32" y1="80.35" x2="90.52" y2="84.15" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$26" airwireshidden="yes">
+<contactref element="APA104-29" pad="4"/>
+<contactref element="APA104-28" pad="2"/>
+<wire x1="89.14" y1="74.85" x2="90.52" y2="77.15" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$27" airwireshidden="yes">
+<contactref element="APA104-30" pad="4"/>
+<contactref element="APA104-29" pad="2"/>
+<wire x1="84.34" y1="71.65" x2="27.16" y2="59.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$29" airwireshidden="yes">
+<contactref element="APA104-20" pad="2"/>
+<contactref element="APA104-21" pad="4"/>
+<wire x1="62.18" y1="77.58" x2="62.18" y2="71.01" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$32" airwireshidden="yes">
+<contactref element="APA104-31" pad="2"/>
+<contactref element="APA104-32" pad="4"/>
+<wire x1="11.9" y1="62.1" x2="14.9" y2="61.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$33" airwireshidden="yes">
+<contactref element="APA104-33" pad="4"/>
+<contactref element="APA104-32" pad="2"/>
+<wire x1="9.82" y1="55.1" x2="7.1" y2="58.9" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$34" airwireshidden="yes">
+<contactref element="APA104-34" pad="4"/>
+<contactref element="APA104-33" pad="2"/>
+<wire x1="5.02" y1="51.9" x2="9.98" y2="47.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$35" airwireshidden="yes">
+<contactref element="APA104-35" pad="4"/>
+<contactref element="APA104-34" pad="2"/>
+<wire x1="14.82" y1="40.6" x2="5.18" y2="44.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$36" airwireshidden="yes">
+<contactref element="APA104-36" pad="4"/>
+<contactref element="APA104-35" pad="2"/>
+<wire x1="22.48" y1="40.6" x2="10.02" y2="37.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$37" airwireshidden="yes">
+<contactref element="APA104-37" pad="4"/>
+<contactref element="APA104-36" pad="2"/>
+<wire x1="17.68" y1="37.4" x2="27.66" y2="47.1" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$38" airwireshidden="yes">
+<contactref element="APA104-38" pad="4"/>
+<contactref element="APA104-37" pad="2"/>
+<wire x1="38.82" y1="46.29" x2="22.86" y2="43.9" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$39" airwireshidden="yes">
+<contactref element="APA104-39" pad="4"/>
+<contactref element="APA104-38" pad="2"/>
+<wire x1="37.14" y1="52.67" x2="34.02" y2="43.09" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$40" airwireshidden="yes">
+<contactref element="APA104-40" pad="4"/>
+<contactref element="APA104-39" pad="2"/>
+<wire x1="32.34" y1="49.47" x2="38.82" y2="59.44" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$28" airwireshidden="yes">
+<contactref element="APA104-30" pad="2"/>
+<contactref element="APA104-31" pad="4"/>
+<wire x1="22.36" y1="56.4" x2="19.7" y2="64.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="VCC5V" airwireshidden="yes">
+<contactref element="APA104-40" pad="1"/>
+<contactref element="APA104-39" pad="1"/>
+<contactref element="APA104-38" pad="1"/>
+<contactref element="APA104-37" pad="1"/>
+<contactref element="APA104-36" pad="1"/>
+<contactref element="APA104-35" pad="1"/>
+<contactref element="APA104-34" pad="1"/>
+<contactref element="APA104-33" pad="1"/>
+<contactref element="APA104-32" pad="1"/>
+<contactref element="APA104-31" pad="1"/>
+<contactref element="APA104-1" pad="1"/>
+<contactref element="APA104-2" pad="1"/>
+<contactref element="APA104-9" pad="1"/>
+<contactref element="APA104-3" pad="1"/>
+<contactref element="APA104-4" pad="1"/>
+<contactref element="APA104-5" pad="1"/>
+<contactref element="APA104-6" pad="1"/>
+<contactref element="APA104-7" pad="1"/>
+<contactref element="APA104-8" pad="1"/>
+<contactref element="APA104-10" pad="1"/>
+<contactref element="APA104-20" pad="1"/>
+<contactref element="APA104-19" pad="1"/>
+<contactref element="APA104-18" pad="1"/>
+<contactref element="APA104-17" pad="1"/>
+<contactref element="APA104-16" pad="1"/>
+<contactref element="APA104-15" pad="1"/>
+<contactref element="APA104-14" pad="1"/>
+<contactref element="APA104-13" pad="1"/>
+<contactref element="APA104-12" pad="1"/>
+<contactref element="APA104-11" pad="1"/>
+<contactref element="APA104-21" pad="1"/>
+<contactref element="APA104-22" pad="1"/>
+<contactref element="APA104-29" pad="1"/>
+<contactref element="APA104-23" pad="1"/>
+<contactref element="APA104-24" pad="1"/>
+<contactref element="APA104-25" pad="1"/>
+<contactref element="APA104-26" pad="1"/>
+<contactref element="APA104-27" pad="1"/>
+<contactref element="APA104-28" pad="1"/>
+<contactref element="APA104-30" pad="1"/>
+<contactref element="APA104-41" pad="1"/>
+<contactref element="APA104-42" pad="1"/>
+<contactref element="APA104-49" pad="1"/>
+<contactref element="APA104-43" pad="1"/>
+<contactref element="APA104-44" pad="1"/>
+<contactref element="APA104-45" pad="1"/>
+<contactref element="APA104-46" pad="1"/>
+<contactref element="APA104-47" pad="1"/>
+<contactref element="APA104-48" pad="1"/>
+<contactref element="APA104-50" pad="1"/>
+<contactref element="APA104-60" pad="1"/>
+<contactref element="APA104-59" pad="1"/>
+<contactref element="APA104-58" pad="1"/>
+<contactref element="APA104-57" pad="1"/>
+<contactref element="APA104-56" pad="1"/>
+<contactref element="APA104-55" pad="1"/>
+<contactref element="APA104-54" pad="1"/>
+<contactref element="APA104-53" pad="1"/>
+<contactref element="APA104-52" pad="1"/>
+<contactref element="APA104-51" pad="1"/>
+<contactref element="C-L-1" pad="2"/>
+<contactref element="C-L-2" pad="1"/>
+<contactref element="C-L-3" pad="1"/>
+<contactref element="C-L-4" pad="1"/>
+<contactref element="C-L-5" pad="1"/>
+<contactref element="C-L-6" pad="1"/>
+<contactref element="C-L-7" pad="1"/>
+<contactref element="C-L-8" pad="1"/>
+<contactref element="C-L9" pad="1"/>
+<contactref element="C-L-10" pad="1"/>
+<contactref element="C-L-11" pad="1"/>
+<contactref element="C-L-12" pad="1"/>
+<contactref element="C-L-13" pad="1"/>
+<contactref element="C-L-14" pad="1"/>
+<contactref element="C-L-15" pad="1"/>
+<contactref element="C-L-16" pad="1"/>
+<contactref element="C-L-17" pad="1"/>
+<contactref element="C-L-18" pad="1"/>
+<contactref element="C-L-19" pad="1"/>
+<contactref element="C-L-20" pad="1"/>
+<contactref element="C-L-21" pad="1"/>
+<contactref element="C-L-22" pad="1"/>
+<contactref element="C-L-23" pad="1"/>
+<contactref element="C-L-24" pad="1"/>
+<contactref element="C-L-25" pad="1"/>
+<contactref element="C-L-26" pad="1"/>
+<contactref element="C-L-27" pad="1"/>
+<contactref element="C-L-28" pad="1"/>
+<contactref element="C-L-29" pad="1"/>
+<contactref element="C-L-30" pad="1"/>
+<contactref element="C-L-31" pad="1"/>
+<contactref element="C-L-32" pad="1"/>
+<contactref element="C-L-33" pad="1"/>
+<contactref element="C-L-34" pad="1"/>
+<contactref element="C-L-35" pad="1"/>
+<contactref element="C-L-36" pad="1"/>
+<contactref element="C-L-37" pad="1"/>
+<contactref element="C-L-38" pad="1"/>
+<contactref element="C-L-39" pad="1"/>
+<contactref element="C-L-40" pad="1"/>
+<contactref element="C-L-41" pad="1"/>
+<contactref element="C-L-42" pad="1"/>
+<contactref element="C-L-43" pad="1"/>
+<contactref element="C-L-44" pad="1"/>
+<contactref element="C-L-45" pad="1"/>
+<contactref element="C-L-46" pad="1"/>
+<contactref element="C-L-47" pad="1"/>
+<contactref element="C-L-48" pad="1"/>
+<contactref element="C-L-49" pad="1"/>
+<contactref element="C-L-50" pad="1"/>
+<contactref element="C-L-51" pad="1"/>
+<contactref element="C-L-52" pad="1"/>
+<contactref element="C-L-53" pad="1"/>
+<contactref element="C-L-54" pad="1"/>
+<contactref element="C-L-55" pad="1"/>
+<contactref element="C-L-56" pad="1"/>
+<contactref element="C-L-57" pad="1"/>
+<contactref element="C-L-58" pad="1"/>
+<contactref element="C-L-59" pad="1"/>
+<contactref element="C-L-60" pad="1"/>
+<wire x1="80.82" y1="90.8" x2="84.34" y2="93.2" width="0" layer="19" extent="1-1"/>
+<wire x1="80.82" y1="84.3" x2="80.82" y2="90.8" width="0" layer="19" extent="1-1"/>
+<wire x1="80.82" y1="77.95" x2="80.82" y2="84.3" width="0" layer="19" extent="1-1"/>
+<wire x1="84.34" y1="74.85" x2="80.82" y2="77.95" width="0" layer="19" extent="1-1"/>
+<wire x1="80.82" y1="70.95" x2="84.34" y2="74.85" width="0" layer="19" extent="1-1"/>
+<wire x1="90.52" y1="80.35" x2="84.34" y2="74.85" width="0" layer="19" extent="1-1"/>
+<wire x1="90.52" y1="87.35" x2="90.52" y2="80.35" width="0" layer="19" extent="1-1"/>
+<wire x1="84.52" y1="64.6" x2="80.82" y2="70.95" width="0" layer="19" extent="1-1"/>
+<wire x1="84.5" y1="56.6" x2="84.52" y2="64.6" width="0" layer="19" extent="1-1"/>
+<wire x1="84.34" y1="48.6" x2="84.5" y2="56.6" width="0" layer="19" extent="1-1"/>
+<wire x1="84.18" y1="40.6" x2="84.34" y2="48.6" width="0" layer="19" extent="1-1"/>
+<wire x1="92.18" y1="64.6" x2="84.52" y2="64.6" width="0" layer="19" extent="1-1"/>
+<wire x1="92.5" y1="40.6" x2="84.18" y2="40.6" width="0" layer="19" extent="1-1"/>
+<wire x1="97.16" y1="49.47" x2="92.5" y2="40.6" width="0" layer="19" extent="1-1"/>
+<wire x1="74.6" y1="48.73" x2="84.34" y2="48.6" width="0" layer="19" extent="1-1"/>
+<wire x1="74.6" y1="56.73" x2="74.6" y2="48.73" width="0" layer="19" extent="1-1"/>
+<wire x1="67.68" y1="63.1" x2="74.6" y2="56.73" width="0" layer="19" extent="1-1"/>
+<wire x1="66.98" y1="71.01" x2="67.68" y2="63.1" width="0" layer="19" extent="1-1"/>
+<wire x1="59.02" y1="64.6" x2="67.68" y2="63.1" width="0" layer="19" extent="1-1"/>
+<wire x1="59.02" y1="56.6" x2="59.02" y2="64.6" width="0" layer="19" extent="1-1"/>
+<wire x1="59.02" y1="48.6" x2="59.02" y2="56.6" width="0" layer="19" extent="1-1"/>
+<wire x1="59.02" y1="40.6" x2="59.02" y2="48.6" width="0" layer="19" extent="1-1"/>
+<wire x1="67.68" y1="42.6" x2="59.02" y2="40.6" width="0" layer="19" extent="1-1"/>
+<wire x1="53.48" y1="71.37" x2="59.02" y2="64.6" width="0" layer="19" extent="1-1"/>
+<wire x1="47.2373375" y1="77.157503125" x2="53.48" y2="71.37" width="0" layer="19" extent="1-1"/>
+<wire x1="44.4273375" y1="84.617503125" x2="47.2373375" y2="77.157503125" width="0" layer="19" extent="1-1"/>
+<wire x1="40.98" y1="84.65" x2="44.4273375" y2="84.617503125" width="0" layer="19" extent="1-1"/>
+<wire x1="36.18" y1="80.78" x2="40.98" y2="84.65" width="0" layer="19" extent="1-1"/>
+<wire x1="29.66" y1="76.4" x2="36.18" y2="80.78" width="0" layer="19" extent="1-1"/>
+<wire x1="24.48" y1="69.9" x2="29.66" y2="76.4" width="0" layer="19" extent="1-1"/>
+<wire x1="40.98" y1="70.79" x2="47.2373375" y2="77.157503125" width="0" layer="19" extent="1-1"/>
+<wire x1="41.02" y1="64.6" x2="40.98" y2="70.79" width="0" layer="19" extent="1-1"/>
+<wire x1="34.02" y1="59.44" x2="41.02" y2="64.6" width="0" layer="19" extent="1-1"/>
+<wire x1="32.34" y1="52.67" x2="34.02" y2="59.44" width="0" layer="19" extent="1-1"/>
+<wire x1="34.02" y1="46.29" x2="32.34" y2="52.67" width="0" layer="19" extent="1-1"/>
+<wire x1="41.02" y1="40.6" x2="34.02" y2="46.29" width="0" layer="19" extent="1-1"/>
+<wire x1="48.18" y1="59.44" x2="41.02" y2="64.6" width="0" layer="19" extent="1-1"/>
+<wire x1="49.84" y1="52.67" x2="48.18" y2="59.44" width="0" layer="19" extent="1-1"/>
+<wire x1="48.18" y1="46.29" x2="49.84" y2="52.67" width="0" layer="19" extent="1-1"/>
+<wire x1="14.9" y1="64.6" x2="24.48" y2="69.9" width="0" layer="19" extent="1-1"/>
+<wire x1="7.1" y1="62.1" x2="14.9" y2="64.6" width="0" layer="19" extent="1-1"/>
+<wire x1="5.02" y1="55.1" x2="7.1" y2="62.1" width="0" layer="19" extent="1-1"/>
+<wire x1="5.18" y1="47.6" x2="5.02" y2="55.1" width="0" layer="19" extent="1-1"/>
+<wire x1="10.02" y1="40.6" x2="5.18" y2="47.6" width="0" layer="19" extent="1-1"/>
+<wire x1="17.68" y1="40.6" x2="10.02" y2="40.6" width="0" layer="19" extent="1-1"/>
+<wire x1="22.86" y1="47.1" x2="17.68" y2="40.6" width="0" layer="19" extent="1-1"/>
+<wire x1="22.36" y1="59.6" x2="14.9" y2="64.6" width="0" layer="19" extent="1-1"/>
+<wire x1="62.18" y1="80.78" x2="66.98" y2="71.01" width="0" layer="19" extent="1-1"/>
+<wire x1="57.24435625" y1="81.668028125" x2="62.18" y2="80.78" width="0" layer="19" extent="1-1"/>
+<wire x1="62.18" y1="87.85" x2="62.18" y2="80.78" width="0" layer="19" extent="1-1"/>
+<wire x1="59.74435625" y1="89.128028125" x2="62.18" y2="87.85" width="0" layer="19" extent="1-1"/>
+<wire x1="66.98" y1="91.16" x2="62.18" y2="87.85" width="0" layer="19" extent="1-1"/>
+<wire x1="36.18" y1="94.42" x2="40.98" y2="84.65" width="0" layer="19" extent="1-1"/>
+<wire x1="24.36" y1="92.1" x2="36.18" y2="94.42" width="0" layer="19" extent="1-1"/>
+<wire x1="21.7" y1="93.4" x2="24.36" y2="92.1" width="0" layer="19" extent="1-1"/>
+<wire x1="13.9" y1="90.9" x2="21.7" y2="93.4" width="0" layer="19" extent="1-1"/>
+<wire x1="7.02" y1="87.6" x2="13.9" y2="90.9" width="0" layer="19" extent="1-1"/>
+<wire x1="12.02" y1="73.1" x2="14.9" y2="64.6" width="0" layer="19" extent="1-1"/>
+<wire x1="11.98" y1="76.4" x2="12.02" y2="73.1" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="53" x2="5.02" y2="55.1" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="56" x2="-14.8636" y2="53" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="59" x2="-14.8636" y2="56" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="62" x2="-14.8636" y2="59" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="65" x2="-14.8636" y2="62" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="68" x2="-14.8636" y2="65" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="71" x2="-14.8636" y2="68" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="74" x2="-14.8636" y2="71" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="77" x2="-14.8636" y2="74" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="80" x2="-14.8636" y2="77" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="83" x2="-14.8636" y2="80" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="86" x2="-14.8636" y2="83" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="89" x2="-14.8636" y2="86" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="92" x2="-14.8636" y2="89" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="95" x2="-14.8636" y2="92" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="98" x2="-14.8636" y2="95" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="101" x2="-14.8636" y2="98" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="104" x2="-14.8636" y2="101" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="107" x2="-14.8636" y2="104" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="110" x2="-14.8636" y2="107" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="113" x2="-14.8636" y2="110" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="116" x2="-14.8636" y2="113" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="119" x2="-14.8636" y2="116" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="122" x2="-14.8636" y2="119" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="125" x2="-14.8636" y2="122" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="128" x2="-14.8636" y2="125" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="131" x2="-14.8636" y2="128" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="134" x2="-14.8636" y2="131" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="137" x2="-14.8636" y2="134" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="140" x2="-14.8636" y2="137" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="143" x2="-14.8636" y2="140" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="146" x2="-14.8636" y2="143" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="50" x2="-14.8636" y2="53" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="47" x2="-14.8636" y2="50" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="44" x2="-14.8636" y2="47" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="41" x2="-14.8636" y2="44" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="38" x2="-14.8636" y2="41" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="35" x2="-14.8636" y2="38" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="32" x2="-14.8636" y2="35" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="29" x2="-14.8636" y2="32" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="26" x2="-14.8636" y2="29" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="23" x2="-14.8636" y2="26" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="20" x2="-14.8636" y2="23" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="17" x2="-14.8636" y2="20" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="14" x2="-14.8636" y2="17" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="11" x2="-14.8636" y2="14" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="8" x2="-14.8636" y2="11" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="5" x2="-14.8636" y2="8" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="2" x2="-14.8636" y2="5" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="-1" x2="-14.8636" y2="2" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="-4" x2="-14.8636" y2="-1" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="-7" x2="-14.8636" y2="-4" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="-10" x2="-14.8636" y2="-7" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="-13" x2="-14.8636" y2="-10" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="-16" x2="-14.8636" y2="-13" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="-19" x2="-14.8636" y2="-16" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="-22" x2="-14.8636" y2="-19" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="-25" x2="-14.8636" y2="-22" width="0" layer="19" extent="1-1"/>
+<wire x1="-14.8636" y1="-28" x2="-14.8636" y2="-25" width="0" layer="19" extent="1-1"/>
+<wire x1="30.8636" y1="18" x2="41.02" y2="40.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="GPIO_APA104_DATA1" airwireshidden="yes">
+<contactref element="APA104-41" pad="4"/>
+<contactref element="APA104-40" pad="2"/>
+<wire x1="34.02" y1="56.24" x2="45.82" y2="64.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$30" airwireshidden="yes">
+<contactref element="APA104-42" pad="4"/>
+<contactref element="APA104-41" pad="2"/>
+<wire x1="52.98" y1="59.44" x2="41.02" y2="61.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$42" airwireshidden="yes">
+<contactref element="APA104-43" pad="4"/>
+<contactref element="APA104-42" pad="2"/>
+<wire x1="54.64" y1="52.67" x2="48.18" y2="56.24" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$43" airwireshidden="yes">
+<contactref element="APA104-44" pad="4"/>
+<contactref element="APA104-43" pad="2"/>
+<wire x1="52.98" y1="46.29" x2="49.84" y2="49.47" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$44" airwireshidden="yes">
+<contactref element="APA104-45" pad="4"/>
+<contactref element="APA104-44" pad="2"/>
+<wire x1="48.18" y1="43.09" x2="45.82" y2="40.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$45" airwireshidden="yes">
+<contactref element="APA104-46" pad="4"/>
+<contactref element="APA104-45" pad="2"/>
+<wire x1="63.82" y1="40.6" x2="41.02" y2="37.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$46" airwireshidden="yes">
+<contactref element="APA104-47" pad="4"/>
+<contactref element="APA104-46" pad="2"/>
+<wire x1="63.82" y1="48.6" x2="59.02" y2="37.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$47" airwireshidden="yes">
+<contactref element="APA104-48" pad="4"/>
+<contactref element="APA104-47" pad="2"/>
+<wire x1="63.82" y1="56.6" x2="59.02" y2="45.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$48" airwireshidden="yes">
+<contactref element="APA104-49" pad="4"/>
+<contactref element="APA104-48" pad="2"/>
+<wire x1="59.02" y1="53.4" x2="63.82" y2="64.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$49" airwireshidden="yes">
+<contactref element="APA104-50" pad="4"/>
+<contactref element="APA104-49" pad="2"/>
+<wire x1="72.48" y1="63.1" x2="59.02" y2="61.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$51" airwireshidden="yes">
+<contactref element="APA104-51" pad="2"/>
+<contactref element="APA104-52" pad="4"/>
+<wire x1="79.4" y1="48.73" x2="74.6" y2="53.53" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$52" airwireshidden="yes">
+<contactref element="APA104-53" pad="4"/>
+<contactref element="APA104-52" pad="2"/>
+<wire x1="74.6" y1="45.53" x2="72.48" y2="42.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$53" airwireshidden="yes">
+<contactref element="APA104-54" pad="4"/>
+<contactref element="APA104-53" pad="2"/>
+<wire x1="88.98" y1="40.6" x2="67.68" y2="39.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$54" airwireshidden="yes">
+<contactref element="APA104-55" pad="4"/>
+<contactref element="APA104-54" pad="2"/>
+<wire x1="89.14" y1="48.6" x2="84.18" y2="37.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$55" airwireshidden="yes">
+<contactref element="APA104-56" pad="4"/>
+<contactref element="APA104-55" pad="2"/>
+<wire x1="89.3" y1="56.6" x2="84.34" y2="45.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$56" airwireshidden="yes">
+<contactref element="APA104-57" pad="4"/>
+<contactref element="APA104-56" pad="2"/>
+<wire x1="84.5" y1="53.4" x2="89.32" y2="64.6" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$57" airwireshidden="yes">
+<contactref element="APA104-58" pad="4"/>
+<contactref element="APA104-57" pad="2"/>
+<wire x1="96.98" y1="64.6" x2="84.52" y2="61.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$58" airwireshidden="yes">
+<contactref element="APA104-59" pad="4"/>
+<contactref element="APA104-58" pad="2"/>
+<wire x1="92.36" y1="49.47" x2="92.18" y2="61.4" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$59" airwireshidden="yes">
+<contactref element="APA104-60" pad="4"/>
+<contactref element="APA104-59" pad="2"/>
+<wire x1="97.3" y1="40.6" x2="97.16" y2="52.67" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$41" airwireshidden="yes">
+<contactref element="APA104-50" pad="2"/>
+<contactref element="APA104-51" pad="4"/>
+<wire x1="79.4" y1="56.73" x2="67.68" y2="59.9" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="N$69">
+<contactref element="APA104-60" pad="2"/>
+</signal>
+</signals>
+<mfgpreviewcolors>
+<mfgpreviewcolor name="soldermaskcolor" color="0xC8008000"/>
+<mfgpreviewcolor name="silkscreencolor" color="0xFFFEFEFE"/>
+<mfgpreviewcolor name="backgroundcolor" color="0xFF282828"/>
+<mfgpreviewcolor name="coppercolor" color="0xFFFFBF00"/>
+<mfgpreviewcolor name="substratecolor" color="0xFF786E46"/>
+</mfgpreviewcolors>
+</board>
+</drawing>
+</eagle>

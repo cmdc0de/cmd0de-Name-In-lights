@@ -360,6 +360,7 @@ UsedLibrary="D:/My Stuff/dev/defcon/defcon26/dc26-badge/hardware/dc26-lbr/esp32-
 UsedLibrary="D:/My Stuff/dev/defcon/defcon26/dc26-badge/hardware/dc26-lbr/esp32.lbr"
 UsedLibrary="D:/My Stuff/dev/eagle/Eagle-Libraries/Connectors/con-headers-jp.lbr"
 UsedLibrary="D:/My Stuff/dev/eagle/Eagle-Libraries/Connectors/con-hdrs40.lbr"
+UsedLibrary="lib/name-in-lights.lbr"
 
 [Win_1]
 Type="Control Panel"

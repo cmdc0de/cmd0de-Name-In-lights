@@ -6324,8 +6324,7 @@ Basic small signal diode good up to 200mA. SMB footprint. Common part #: BAS16</
 <smd name="2" x="-2.4" y="-1.6" dx="1.35" dy="0.95" layer="1"/>
 <smd name="3" x="2.4" y="-1.6" dx="1.35" dy="0.95" layer="1"/>
 <smd name="4" x="2.4" y="1.6" dx="1.35" dy="0.95" layer="1"/>
-<text x="0" y="0" size="1.27" layer="25" align="center">&gt;NAME</text>
-<text x="0" y="0" size="1.27" layer="51" align="center">&gt;VALUE</text>
+<text x="-0.127" y="0.127" size="0.6096" layer="25" align="center">&gt;NAME</text>
 <wire x1="-3.325" y1="2.75" x2="3.325" y2="2.75" width="0.05" layer="21"/>
 <wire x1="3.325" y1="2.75" x2="3.325" y2="-2.75" width="0.05" layer="21"/>
 <wire x1="3.325" y1="-2.75" x2="-3.325" y2="-2.75" width="0.05" layer="21"/>
@@ -8770,8 +8769,8 @@ chip</description>
 <wire x1="-0.381" y1="0.66" x2="0.381" y2="0.66" width="0.1016" layer="51"/>
 <wire x1="-0.356" y1="-0.66" x2="0.381" y2="-0.66" width="0.1016" layer="51"/>
 <wire x1="1.973" y1="0.983" x2="1.973" y2="-0.983" width="0.0508" layer="39"/>
-<smd name="1" x="-0.8636" y="0" dx="1.1684" dy="1.4986" layer="1"/>
-<smd name="2" x="0.8636" y="0" dx="1.1684" dy="1.4986" layer="1"/>
+<smd name="1" x="-0.889" y="0" dx="1.1684" dy="1.4986" layer="1"/>
+<smd name="2" x="0.889" y="0" dx="1.1684" dy="1.4986" layer="1"/>
 <text x="-0.762" y="1.016" size="0.254" layer="25" font="vector">&gt;NAME</text>
 <text x="-0.762" y="-1.27" size="0.254" layer="27" font="vector">&gt;VALUE</text>
 <rectangle x1="-1.0922" y1="-0.7239" x2="-0.3421" y2="0.7262" layer="51"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.1.3">
+<eagle version="9.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -389,65 +389,49 @@ chip</description>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="Voltera_DRC-my-adds">
-<description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
-&lt;p&gt;
-Die Standard-Design-Rules sind so gewählt, dass sie für 
-die meisten Anwendungen passen. Sollte ihre Platine 
-besondere Anforderungen haben, treffen Sie die erforderlichen
-Einstellungen hier und speichern die Design Rules unter 
-einem neuen Namen ab.</description>
-<description language="en">&lt;b&gt;VOLTERA V-ONE Design Rules&lt;/b&gt;
-&lt;p&gt;
-These design rules are intended to identify common sources of printing errors when printing a circuit with the Voltera V-One. &lt;b&gt;Always thoroughly check your design in the V-One software print preview before printing! 
-&lt;p&gt;&lt;b&gt;COPPER POURS:&lt;/b&gt; Use Hatch planes, or replace with a trace.
-&lt;br&gt;&lt;b&gt;BOARD SIZE:&lt;/b&gt; Maximum 4x5 inches. 
-&lt;/p&gt;
-&lt;p&gt;
-V1.0 2018-04-18
-&lt;ul&gt; 
-&lt;li&gt;Min trace width / spacing set to 10 mil. 
-&lt;li&gt;Recommended minimum via drill diameter 0.4mm.
-&lt;li&gt;Minimum annular ring for via/pad 0.2mm.
-&lt;li&gt;Changed restring value to 0 for rivets.
-&lt;/ul&gt;</description>
+<designrules name="OthermillDRC_1_100_v2">
+<description language="en">&lt;b&gt;Othermill EAGLE Design Rules v2&lt;/b&gt;
+&lt;p&gt;DRC for Othermill, 1/100&quot; tool&lt;/p&gt;
+&lt;b&gt;-- Rules --&lt;/b&gt;&lt;li&gt;8 mil traces&lt;/li&gt;
+&lt;li&gt;10.1mil clearance&lt;/li&gt;
+&lt;p&gt;Why 10.1mil instead of 10? There's a bug (#475) where Otherplan will sometimes not try to cut traces that are exactly the tool width apart. Until this bug is resolved, you can either increase your trace distance to larger than 10mil, or if you have very few traces that are 10mil apart, you can change the trace clearance in increments of 0.001&quot; until you see cut lines between all of them.&lt;/p&gt;</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
 <param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
-<param name="mdWireWire" value="12mil"/>
-<param name="mdWirePad" value="12mil"/>
-<param name="mdWireVia" value="0.6mm"/>
-<param name="mdPadPad" value="0.6mm"/>
-<param name="mdPadVia" value="0.6mm"/>
-<param name="mdViaVia" value="0.6mm"/>
+<param name="mdWireWire" value="0.256540625mm"/>
+<param name="mdWirePad" value="0.256540625mm"/>
+<param name="mdWireVia" value="0.256540625mm"/>
+<param name="mdPadPad" value="0.256540625mm"/>
+<param name="mdPadVia" value="0.256540625mm"/>
+<param name="mdViaVia" value="0.256540625mm"/>
 <param name="mdSmdPad" value="0mil"/>
 <param name="mdSmdVia" value="0mil"/>
 <param name="mdSmdSmd" value="0mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
 <param name="mdCopperDimension" value="0mil"/>
-<param name="mdDrill" value="0.8mm"/>
+<param name="mdDrill" value="1mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="10mil"/>
-<param name="msDrill" value="0.7mm"/>
+<param name="msWidth" value="8mil"/>
+<param name="msDrill" value="0.8mm"/>
 <param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
-<param name="rvPadTop" value="0"/>
-<param name="rvPadInner" value="0"/>
-<param name="rvPadBottom" value="0"/>
-<param name="rvViaOuter" value="0"/>
-<param name="rvViaInner" value="0"/>
-<param name="rvMicroViaOuter" value="0"/>
-<param name="rvMicroViaInner" value="0"/>
-<param name="rlMinPadTop" value="0.2mm"/>
+<param name="rvPadTop" value="0.25"/>
+<param name="rvPadInner" value="0.25"/>
+<param name="rvPadBottom" value="0.25"/>
+<param name="rvViaOuter" value="0.25"/>
+<param name="rvViaInner" value="0.25"/>
+<param name="rvMicroViaOuter" value="0.25"/>
+<param name="rvMicroViaInner" value="0.25"/>
+<param name="rlMinPadTop" value="10mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
 <param name="rlMinPadInner" value="10mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="0.2mm"/>
+<param name="rlMinPadBottom" value="10mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="0.2mm"/>
+<param name="rlMinViaOuter" value="10mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="10mil"/>
+<param name="rlMinViaInner" value="8mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -456,23 +440,23 @@ V1.0 2018-04-18
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
 <param name="psFirst" value="-1"/>
-<param name="psElongationLong" value="100"/>
+<param name="psElongationLong" value="50"/>
 <param name="psElongationOffset" value="100"/>
-<param name="mvStopFrame" value="1"/>
-<param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="4mil"/>
-<param name="mlMaxStopFrame" value="4mil"/>
-<param name="mlMinCreamFrame" value="0mil"/>
-<param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="0mil"/>
-<param name="srRoundness" value="0"/>
-<param name="srMinRoundness" value="0mil"/>
-<param name="srMaxRoundness" value="0mil"/>
+<param name="mvStopFrame" value="0.05"/>
+<param name="mvCreamFrame" value="0.05"/>
+<param name="mlMinStopFrame" value="1mil"/>
+<param name="mlMaxStopFrame" value="2mil"/>
+<param name="mlMinCreamFrame" value="2mil"/>
+<param name="mlMaxCreamFrame" value="10mil"/>
+<param name="mlViaStopLimit" value="30mil"/>
+<param name="srRoundness" value="0.1"/>
+<param name="srMinRoundness" value="2mil"/>
+<param name="srMaxRoundness" value="10mil"/>
 <param name="slThermalIsolate" value="10mil"/>
 <param name="slThermalsForVias" value="0"/>
 <param name="dpMaxLengthDifference" value="10mm"/>
 <param name="dpGapFactor" value="2.5"/>
-<param name="checkAngle" value="1"/>
+<param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
 <param name="checkRestrict" value="1"/>
 <param name="checkStop" value="0"/>
@@ -587,6 +571,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="27.24" y="90.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="27.24" y="90.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="27.24" y="90.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="27.113" y="90.627" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="27.24" y="90.5" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="27.24" y="90.5" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="27.24" y="90.5" size="1.778" layer="27" display="off"/>
@@ -598,13 +583,23 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="19.2" y="94" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="19.2" y="94" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="19.2" y="94" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="19.073" y="94.127" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="19.2" y="94" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="19.2" y="94" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="19.2" y="94" size="1.778" layer="27" display="off"/>
 </element>
-<element name="C81" library="name-in-lights" package="C0805-VOLTA" value="0.1uf" x="33.74" y="38.55" rot="R270"/>
-<element name="C82" library="name-in-lights" package="C0805-VOLTA" value="10uf" x="36.49" y="38.63" rot="R270"/>
-<element name="C83" library="name-in-lights" package="C0805-VOLTA" value="100nF" x="22.96" y="31.01" rot="R180"/>
+<element name="C81" library="name-in-lights" package="C0805-VOLTA" value="0.1uf" x="33.74" y="38.55" rot="R270">
+<attribute name="NAME" x="34.756" y="39.312" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="32.47" y="39.312" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C82" library="name-in-lights" package="C0805-VOLTA" value="10uf" x="36.49" y="38.63" rot="R270">
+<attribute name="NAME" x="37.506" y="39.392" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="35.22" y="39.392" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C83" library="name-in-lights" package="C0805-VOLTA" value="100nF" x="22.96" y="31.01" rot="R180">
+<attribute name="NAME" x="23.722" y="29.994" size="0.254" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="23.722" y="32.28" size="0.254" layer="27" font="vector" rot="R180"/>
+</element>
 <element name="IC1" library="NameInLights" package="SOIC127P600X175-8N" value="ATTINY13A-SSU" x="33.06" y="33.31">
 <attribute name="ARROW_PART_NUMBER" value="ATTINY13A-SSU" x="33.06" y="33.31" size="1.778" layer="27" display="off"/>
 <attribute name="ARROW_PRICE/STOCK" value="https://www.arrow.com/en/products/attiny13a-ssu/microchip-technology" x="33.06" y="33.31" size="1.778" layer="27" display="off"/>
@@ -612,14 +607,23 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="1.75mm" x="33.06" y="33.31" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Microchip" x="33.06" y="33.31" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="ATTINY13A-SSU" x="33.06" y="33.31" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="33.06" y="33.31" size="1.27" layer="25" align="center"/>
 <attribute name="RS_PART_NUMBER" value="9214573" x="33.06" y="33.31" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PRICE/STOCK" value="http://uk.rs-online.com/web/p/products/9214573" x="33.06" y="33.31" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="33.06" y="33.31" size="1.27" layer="27" align="center"/>
 </element>
 <element name="J1" library="NameInLights" package="1X08" value="1x8 header" x="60.02" y="31.68" rot="R180">
+<attribute name="NAME" x="61.3662" y="29.8512" size="1.27" layer="25" ratio="10" rot="R180"/>
 <attribute name="PROD_ID" value="CONN-08438" x="60.02" y="31.68" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="VALUE" x="61.29" y="34.855" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R1" library="NameInLights" package="0805" value="4K7" x="25.97" y="33.89" rot="R270"/>
-<element name="RESET" library="NameInLights" package="TACTILE-2PIN-NARROW" value="SWITCH_TACTILETACTILE-2PIN-NARROW" x="20.12" y="33.68" rot="R180"/>
+<element name="R1" library="NameInLights" package="0805" value="4K7" x="25.97" y="33.89" rot="R270">
+<attribute name="NAME" x="26.7955" y="34.652" size="0.4064" layer="25" rot="R270"/>
+<attribute name="VALUE" x="24.573" y="34.906" size="0.4064" layer="27" rot="R270"/>
+</element>
+<element name="RESET" library="NameInLights" package="TACTILE-2PIN-NARROW" value="SWITCH_TACTILETACTILE-2PIN-NARROW" x="20.12" y="33.68" rot="R180">
+<attribute name="NAME" x="22.914" y="31.648" size="0.6096" layer="25" font="vector" ratio="10" rot="R180"/>
+</element>
 <element name="APA104-3" library="name-in-lights" package="APA104" value="APA104" x="11.5" y="92.5">
 <attribute name="3D_PACKAGE" value="" x="10.23" y="92.5" size="1.778" layer="27" display="off"/>
 <attribute name="ALLIED_NUMBER" value="" x="10.23" y="92.5" size="1.778" layer="27" display="off"/>
@@ -627,6 +631,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="10.23" y="92.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="10.23" y="92.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="10.23" y="92.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="11.373" y="92.627" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="10.23" y="92.5" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="10.23" y="92.5" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="10.23" y="92.5" size="1.778" layer="27" display="off"/>
@@ -638,6 +643,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="8.15" y="86" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="8.15" y="86" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="8.15" y="86" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="9.293" y="86.127" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="8.15" y="86" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="8.15" y="86" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="8.15" y="86" size="1.778" layer="27" display="off"/>
@@ -649,6 +655,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="8.65" y="79" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="8.65" y="79" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="8.65" y="79" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="9.793" y="79.127" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="8.65" y="79" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="8.65" y="79" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="8.65" y="79" size="1.778" layer="27" display="off"/>
@@ -660,6 +667,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="12.15" y="72.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="12.15" y="72.5" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="12.15" y="72.5" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="13.293" y="72.627" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="12.15" y="72.5" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="12.15" y="72.5" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="12.15" y="72.5" size="1.778" layer="27" display="off"/>
@@ -671,6 +679,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="23.35" y="72.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="23.35" y="72.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="23.35" y="72.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="22.207" y="72.373" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="23.35" y="72.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="23.35" y="72.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="23.35" y="72.5" size="1.778" layer="27" rot="R180" display="off"/>
@@ -682,6 +691,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="29.03" y="78.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="29.03" y="78.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="29.03" y="78.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="27.887" y="78.373" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="29.03" y="78.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="29.03" y="78.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="29.03" y="78.5" size="1.778" layer="27" rot="R180" display="off"/>
@@ -693,6 +703,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="38.707" y="72.263" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="39.85" y="72.39" size="1.778" layer="27" rot="R180" display="off"/>
@@ -704,6 +715,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="39.85" y="79.18" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="39.85" y="79.18" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="39.85" y="79.18" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="38.707" y="79.053" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="39.85" y="79.18" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="39.85" y="79.18" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="39.85" y="79.18" size="1.778" layer="27" rot="R180" display="off"/>
@@ -715,6 +727,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="38.707" y="86.123" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="39.85" y="86.25" size="1.778" layer="27" rot="R180" display="off"/>
@@ -726,6 +739,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="39.85" y="92.82" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="39.85" y="92.82" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="39.85" y="92.82" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="38.707" y="92.693" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="39.85" y="92.82" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="39.85" y="92.82" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="39.85" y="92.82" size="1.778" layer="27" rot="R180" display="off"/>
@@ -737,6 +751,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="NAME" x="45.03409375" y="87.257221875" size="0.6096" layer="25" rot="R110" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="45.544353125" y="86.226578125" size="1.778" layer="27" rot="R110" display="off"/>
@@ -748,6 +763,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
+<attribute name="NAME" x="47.84409375" y="79.797221875" size="0.6096" layer="25" rot="R110" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="48.3543625" y="78.7665875" size="1.778" layer="27" rot="R110" display="off"/>
@@ -759,6 +775,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="49.81" y="72.97" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="49.81" y="72.97" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="49.81" y="72.97" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="50.953" y="73.097" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="49.81" y="72.97" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="49.81" y="72.97" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="49.81" y="72.97" size="1.778" layer="27" display="off"/>
@@ -770,6 +787,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="NAME" x="55.082775" y="80.035903125" size="0.6096" layer="25" rot="R250" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="55.3543625" y="81.153409375" size="1.778" layer="27" rot="R250" display="off"/>
@@ -781,6 +799,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
+<attribute name="NAME" x="57.582775" y="87.495903125" size="0.6096" layer="25" rot="R250" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="57.8543625" y="88.613409375" size="1.778" layer="27" rot="R250" display="off"/>
@@ -792,6 +811,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="64.707" y="92.633" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="65.85" y="92.76" size="1.778" layer="27" rot="R180" display="off"/>
@@ -803,6 +823,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="64.453" y="86.377" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="63.31" y="86.25" size="1.778" layer="27" display="off"/>
@@ -814,6 +835,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="64.453" y="79.307" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="63.31" y="79.18" size="1.778" layer="27" display="off"/>
@@ -825,6 +847,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="64.707" y="72.483" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="65.85" y="72.61" size="1.778" layer="27" rot="R180" display="off"/>
@@ -836,6 +859,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="78.547" y="72.423" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="89.85" y="78.9" size="1.778" layer="27" rot="R180" display="off"/>
@@ -847,6 +871,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="78.547" y="79.423" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="110.17" y="92.25" size="1.778" layer="27" rot="R180" display="off"/>
@@ -858,6 +883,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="78.547" y="85.773" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="94.93" y="98.6" size="1.778" layer="27" rot="R180" display="off"/>
@@ -869,6 +895,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="78.547" y="92.273" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="110.17" y="111.45" size="1.778" layer="27" rot="R180" display="off"/>
@@ -880,6 +907,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="133.73" y="117" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="133.73" y="117" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="133.73" y="117" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="86.867" y="91.473" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="133.73" y="117" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="133.73" y="117" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="133.73" y="117" size="1.778" layer="27" rot="R180" display="off"/>
@@ -891,6 +919,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="92.793" y="85.877" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="61.17" y="60.35" size="1.778" layer="27" display="off"/>
@@ -902,6 +931,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="45.93" y="47" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="45.93" y="47" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="45.93" y="47" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="92.793" y="78.877" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="45.93" y="47" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="45.93" y="47" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="45.93" y="47" size="1.778" layer="27" display="off"/>
@@ -913,6 +943,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="86.613" y="73.377" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="24.51" y="35.15" size="1.778" layer="27" display="off"/>
@@ -924,6 +955,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="24.633" y="58.127" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="-22.23" y="19.9" size="1.778" layer="27" display="off"/>
@@ -935,6 +967,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="16.03" y="63" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="16.03" y="63" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="16.03" y="63" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="17.173" y="63.127" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="16.03" y="63" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="16.03" y="63" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="16.03" y="63" size="1.778" layer="27" display="off"/>
@@ -946,6 +979,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="9.373" y="60.627" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="-7.01" y="54.15" size="1.778" layer="27" display="off"/>
@@ -957,6 +991,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.293" y="53.627" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="-24.33" y="40.8" size="1.778" layer="27" display="off"/>
@@ -968,6 +1003,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="7.453" y="46.127" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="-8.93" y="33.3" size="1.778" layer="27" display="off"/>
@@ -979,6 +1015,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="-20.33" y="19.95" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-20.33" y="19.95" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-20.33" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="11.293" y="39.127" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="-20.33" y="19.95" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="-20.33" y="19.95" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="-20.33" y="19.95" size="1.778" layer="27" display="off"/>
@@ -990,6 +1027,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="67.07" y="64.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="67.07" y="64.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="67.07" y="64.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="20.207" y="38.873" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="67.07" y="64.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="67.07" y="64.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="67.07" y="64.4" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1001,6 +1039,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="57.01" y="70.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="57.01" y="70.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="57.01" y="70.9" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="25.387" y="45.373" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="57.01" y="70.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="57.01" y="70.9" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="57.01" y="70.9" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1012,6 +1051,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="83.41" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="83.41" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="83.41" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="36.547" y="44.563" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="83.41" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="83.41" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="83.41" y="76.44" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1023,6 +1063,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="96.97" y="89.17" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="96.97" y="89.17" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="96.97" y="89.17" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="34.867" y="50.943" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="96.97" y="89.17" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="96.97" y="89.17" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="96.97" y="89.17" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1034,6 +1075,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="83.41" y="95.94" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="83.41" y="95.94" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="83.41" y="95.94" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="36.547" y="57.713" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="83.41" y="95.94" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="83.41" y="95.94" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="83.41" y="95.94" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1045,6 +1087,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="44.69" y="63" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="44.69" y="63" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="44.69" y="63" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="43.547" y="62.873" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="44.69" y="63" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="44.69" y="63" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="44.69" y="63" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1056,6 +1099,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="50.453" y="57.967" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="39.15" y="51.49" size="1.778" layer="27" display="off"/>
@@ -1067,6 +1111,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="52.113" y="51.197" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="20.49" y="38.37" size="1.778" layer="27" display="off"/>
@@ -1078,6 +1123,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="50.453" y="44.817" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="3.59" y="25.64" size="1.778" layer="27" display="off"/>
@@ -1089,6 +1135,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="43.293" y="39.127" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="21.83" y="19.95" size="1.778" layer="27" display="off"/>
@@ -1100,6 +1147,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="98.25" y="64.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="98.25" y="64.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="98.25" y="64.4" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="61.547" y="38.873" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="98.25" y="64.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="98.25" y="64.4" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="98.25" y="64.4" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1111,6 +1159,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="113.49" y="78.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="113.49" y="78.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="113.49" y="78.75" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="61.547" y="46.873" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="113.49" y="78.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="113.49" y="78.75" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="113.49" y="78.75" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1122,6 +1171,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="128.73" y="93.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="128.73" y="93.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="128.73" y="93.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="61.547" y="54.873" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="128.73" y="93.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="128.73" y="93.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="128.73" y="93.1" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1133,6 +1183,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="103.33" y="101.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="103.33" y="101.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="103.33" y="101.1" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="61.547" y="62.873" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="103.33" y="101.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="103.33" y="101.1" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="103.33" y="101.1" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1144,6 +1195,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="127.23" y="105.95" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="127.23" y="105.95" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="127.23" y="105.95" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="70.207" y="61.373" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="127.23" y="105.95" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="127.23" y="105.95" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="127.23" y="105.95" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1155,6 +1207,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="76.873" y="55.257" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="4.61" y="4.33" size="1.778" layer="27" display="off"/>
@@ -1166,6 +1219,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="76.873" y="47.257" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="-10.63" y="-10.02" size="1.778" layer="27" display="off"/>
@@ -1177,6 +1231,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="69.953" y="41.127" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="7.85" y="-16.15" size="1.778" layer="27" display="off"/>
@@ -1188,6 +1243,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="164.05" y="102.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="164.05" y="102.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="164.05" y="102.5" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="86.707" y="38.873" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="164.05" y="102.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="164.05" y="102.5" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="164.05" y="102.5" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1199,6 +1255,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="179.45" y="116.85" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="179.45" y="116.85" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="179.45" y="116.85" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="86.867" y="46.873" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="179.45" y="116.85" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="179.45" y="116.85" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="179.45" y="116.85" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1210,6 +1267,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="194.85" y="131.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="194.85" y="131.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="194.85" y="131.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="87.027" y="54.873" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="194.85" y="131.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="194.85" y="131.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="194.85" y="131.2" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1221,6 +1279,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="169.47" y="139.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="169.47" y="139.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="169.47" y="139.2" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="87.047" y="62.873" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="169.47" y="139.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="169.47" y="139.2" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="169.47" y="139.2" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1232,6 +1291,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="192.37" y="145.55" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="192.37" y="145.55" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="192.37" y="145.55" size="1.778" layer="27" rot="R180" display="off"/>
+<attribute name="NAME" x="94.707" y="62.873" size="0.6096" layer="25" rot="R180" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="192.37" y="145.55" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="192.37" y="145.55" size="1.778" layer="27" rot="R180" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="192.37" y="145.55" size="1.778" layer="27" rot="R180" display="off"/>
@@ -1243,6 +1303,7 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="-18.02" y="-37.83" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-18.02" y="-37.83" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-18.02" y="-37.83" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="94.883" y="51.197" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="-18.02" y="-37.83" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="-18.02" y="-37.83" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="-18.02" y="-37.83" size="1.778" layer="27" display="off"/>
@@ -1254,71 +1315,255 @@ V1.0 2018-04-18
 <attribute name="HEIGHT" value="mm" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_NAME" value="Worldsemi" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
 <attribute name="MANUFACTURER_PART_NUMBER" value="APA104" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="94.773" y="39.127" size="0.6096" layer="25" align="center"/>
 <attribute name="OTHER_PART_NUMBER" value="" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
 <attribute name="RS_PART_NUMBER" value="" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
 <attribute name="SUPPLIER_NAME" value="RS" x="-33.37" y="-56.25" size="1.778" layer="27" display="off"/>
 </element>
-<element name="POWER-IN" library="name-in-lights" package="1X02" value="5V" x="64.63" y="31.8"/>
-<element name="C-L-1" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="25.75" y="94.5" rot="R180"/>
-<element name="C-L-2" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="21" y="89" rot="R270"/>
-<element name="C-L-4" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="6" y="90" rot="R180"/>
-<element name="C-L-3" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="17" y="88.5"/>
-<element name="C-L-5" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="5" y="80" rot="R270"/>
-<element name="C-L-6" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="8.5" y="73" rot="R270"/>
-<element name="C-L-7" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="27" y="71.5" rot="R90"/>
-<element name="C-L-8" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="30" y="73.5" rot="R270"/>
-<element name="C-L9" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="32.25" y="69.5" rot="R180"/>
-<element name="C-L-10" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="43.75" y="77.75" rot="R270"/>
-<element name="C-L-11" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="32.75" y="87" rot="R90"/>
-<element name="C-L-12" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="33.5" y="94" rot="R90"/>
-<element name="C-L-13" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="48.5" y="91" rot="R110"/>
-<element name="C-L-14" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="45.75" y="73" rot="R270"/>
-<element name="C-L-15" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="46" y="69" rot="R180"/>
-<element name="C-L-16" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="58.25" y="77.5" rot="R250"/>
-<element name="C-L-17" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="60" y="81.75" rot="R250"/>
-<element name="C-L-18" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="70" y="90" rot="R270"/>
-<element name="C-L-19" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="70" y="85.25" rot="R270"/>
-<element name="C-L-20" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="70" y="80" rot="R270"/>
-<element name="C-L-21" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="70" y="73.25" rot="R90"/>
-<element name="C-L-22" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="77.25" y="68.75" rot="R180"/>
-<element name="C-L-23" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="83" y="79.25" rot="R90"/>
-<element name="C-L-24" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="83.25" y="85.25" rot="R90"/>
-<element name="C-L-25" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="86.5" y="85.5" rot="R270"/>
-<element name="C-L-26" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="93" y="93.25"/>
-<element name="C-L-27" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="97" y="91" rot="R90"/>
-<element name="C-L-28" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="87.5" y="81.5" rot="R90"/>
-<element name="C-L-29" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="87" y="77.25"/>
-<element name="C-L-30" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="24.5" y="62"/>
-<element name="C-L-31" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="11.25" y="65.25" rot="R180"/>
-<element name="C-L-32" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="4.5" y="60.75" rot="R270"/>
-<element name="C-L-33" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="14" y="54.5" rot="R270"/>
-<element name="C-L-34" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="14" y="48.75" rot="R270"/>
-<element name="C-L-35" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="7" y="39.5" rot="R270"/>
-<element name="C-L-36" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="25.25" y="39.75" rot="R90"/>
-<element name="C-L-37" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="29.75" y="45.25" rot="R90"/>
-<element name="C-L-38" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="41" y="44.75" rot="R90"/>
-<element name="C-L-39" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="39.5" y="50.5" rot="R90"/>
-<element name="C-L-40" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="41" y="57.25" rot="R90"/>
-<element name="C-L-41" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="48" y="63.75" rot="R90"/>
-<element name="C-L-42" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="51.25" y="61.75"/>
-<element name="C-L-43" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="47.75" y="51.5" rot="R270"/>
-<element name="C-L-44" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="46" y="45.25" rot="R270"/>
-<element name="C-L-45" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="43.5" y="44.75" rot="R90"/>
-<element name="C-L-46" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="55.75" y="40" rot="R90"/>
-<element name="C-L-47" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="66" y="46.5" rot="R90"/>
-<element name="C-L-48" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="66" y="55" rot="R90"/>
-<element name="C-L-49" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="63" y="59" rot="R180"/>
-<element name="C-L-50" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="74.75" y="61" rot="R90"/>
-<element name="C-L-51" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="72.5" y="55.5" rot="R270"/>
-<element name="C-L-52" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="72" y="48.5" rot="R270"/>
-<element name="C-L-53" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="69.75" y="45"/>
-<element name="C-L-54" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="91" y="35"/>
-<element name="C-L-55" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="90.25" y="43" rot="R180"/>
-<element name="C-L-56" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="88.5" y="51" rot="R180"/>
-<element name="C-L-57" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="88" y="59" rot="R180"/>
-<element name="C-L-58" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="96" y="58.5"/>
-<element name="C-L-59" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="94" y="55"/>
-<element name="C-L-60" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="95" y="43"/>
+<element name="POWER-IN" library="name-in-lights" package="1X02" value="5V" x="64.63" y="31.8">
+<attribute name="NAME" x="63.2838" y="33.6288" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="63.36" y="28.625" size="1.27" layer="27"/>
+</element>
+<element name="C-L-1" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="25.75" y="94.5" rot="R180">
+<attribute name="NAME" x="26.512" y="93.484" size="0.254" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="26.512" y="95.77" size="0.254" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="C-L-2" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="21" y="89" rot="R270">
+<attribute name="NAME" x="22.016" y="89.762" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="19.73" y="89.762" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-4" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="6" y="90" rot="R180">
+<attribute name="NAME" x="6.762" y="88.984" size="0.254" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="6.762" y="91.27" size="0.254" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="C-L-3" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="17" y="88.5">
+<attribute name="NAME" x="16.238" y="89.516" size="0.254" layer="25" font="vector"/>
+<attribute name="VALUE" x="16.238" y="87.23" size="0.254" layer="27" font="vector"/>
+</element>
+<element name="C-L-5" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="5" y="80" rot="R270">
+<attribute name="NAME" x="6.016" y="80.762" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="3.73" y="80.762" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-6" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="8.5" y="73" rot="R270">
+<attribute name="NAME" x="9.516" y="73.762" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="7.23" y="73.762" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-7" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="27" y="71.5" rot="R90">
+<attribute name="NAME" x="25.984" y="70.738" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="28.27" y="70.738" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-8" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="30" y="73.5" rot="R270">
+<attribute name="NAME" x="31.016" y="74.262" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="28.73" y="74.262" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L9" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="32.25" y="69.5" rot="R180">
+<attribute name="NAME" x="33.012" y="68.484" size="0.254" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="33.012" y="70.77" size="0.254" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="C-L-10" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="43.75" y="77.75" rot="R270">
+<attribute name="NAME" x="44.766" y="78.512" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="42.48" y="78.512" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-11" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="32.75" y="87" rot="R90">
+<attribute name="NAME" x="31.734" y="86.238" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="34.02" y="86.238" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-12" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="33.5" y="94" rot="R90">
+<attribute name="NAME" x="32.484" y="93.238" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="34.77" y="93.238" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-13" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="48.5" y="91" rot="R110">
+<attribute name="NAME" x="47.805890625" y="89.936459375" size="0.254" layer="25" font="vector" rot="R110"/>
+<attribute name="VALUE" x="49.954028125" y="90.71831875" size="0.254" layer="27" font="vector" rot="R110"/>
+</element>
+<element name="C-L-14" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="45.75" y="73" rot="R270">
+<attribute name="NAME" x="46.766" y="73.762" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="44.48" y="73.762" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-15" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="46" y="69" rot="R180">
+<attribute name="NAME" x="46.762" y="67.984" size="0.254" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="46.762" y="70.27" size="0.254" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="C-L-16" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="58.25" y="77.5" rot="R250">
+<attribute name="NAME" x="59.465346875" y="77.868553125" size="0.254" layer="25" font="vector" rot="R250"/>
+<attribute name="VALUE" x="57.317209375" y="78.650409375" size="0.254" layer="27" font="vector" rot="R250"/>
+</element>
+<element name="C-L-17" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="60" y="81.75" rot="R250">
+<attribute name="NAME" x="61.215346875" y="82.118553125" size="0.254" layer="25" font="vector" rot="R250"/>
+<attribute name="VALUE" x="59.067209375" y="82.900409375" size="0.254" layer="27" font="vector" rot="R250"/>
+</element>
+<element name="C-L-18" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="70" y="90" rot="R270">
+<attribute name="NAME" x="71.016" y="90.762" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="68.73" y="90.762" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-19" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="70" y="85.25" rot="R270">
+<attribute name="NAME" x="71.016" y="86.012" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="68.73" y="86.012" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-20" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="70" y="80" rot="R270">
+<attribute name="NAME" x="71.016" y="80.762" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="68.73" y="80.762" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-21" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="70" y="73.25" rot="R90">
+<attribute name="NAME" x="68.984" y="72.488" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="71.27" y="72.488" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-22" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="77.25" y="68.75" rot="R180">
+<attribute name="NAME" x="78.012" y="67.734" size="0.254" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="78.012" y="70.02" size="0.254" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="C-L-23" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="83" y="79.25" rot="R90">
+<attribute name="NAME" x="81.984" y="78.488" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="84.27" y="78.488" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-24" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="83.25" y="85.25" rot="R90">
+<attribute name="NAME" x="82.234" y="84.488" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="84.52" y="84.488" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-25" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="86.5" y="85.5" rot="R270">
+<attribute name="NAME" x="87.516" y="86.262" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="85.23" y="86.262" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-26" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="93" y="93.25">
+<attribute name="NAME" x="92.238" y="94.266" size="0.254" layer="25" font="vector"/>
+<attribute name="VALUE" x="92.238" y="91.98" size="0.254" layer="27" font="vector"/>
+</element>
+<element name="C-L-27" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="97" y="91" rot="R90">
+<attribute name="NAME" x="95.984" y="90.238" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="98.27" y="90.238" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-28" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="87.5" y="81.5" rot="R90">
+<attribute name="NAME" x="86.484" y="80.738" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="88.77" y="80.738" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-29" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="87" y="77.25">
+<attribute name="NAME" x="86.238" y="78.266" size="0.254" layer="25" font="vector"/>
+<attribute name="VALUE" x="86.238" y="75.98" size="0.254" layer="27" font="vector"/>
+</element>
+<element name="C-L-30" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="24.5" y="62">
+<attribute name="NAME" x="23.738" y="63.016" size="0.254" layer="25" font="vector"/>
+<attribute name="VALUE" x="23.738" y="60.73" size="0.254" layer="27" font="vector"/>
+</element>
+<element name="C-L-31" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="11.25" y="65.25" rot="R180">
+<attribute name="NAME" x="12.012" y="64.234" size="0.254" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="12.012" y="66.52" size="0.254" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="C-L-32" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="4.5" y="60.75" rot="R270">
+<attribute name="NAME" x="5.516" y="61.512" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="3.23" y="61.512" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-33" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="14" y="54.5" rot="R270">
+<attribute name="NAME" x="15.016" y="55.262" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="12.73" y="55.262" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-34" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="14" y="48.75" rot="R270">
+<attribute name="NAME" x="15.016" y="49.512" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="12.73" y="49.512" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-35" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="7" y="39.5" rot="R270">
+<attribute name="NAME" x="8.016" y="40.262" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="5.73" y="40.262" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-36" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="25.25" y="39.75" rot="R90">
+<attribute name="NAME" x="24.234" y="38.988" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="26.52" y="38.988" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-37" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="29.75" y="45.25" rot="R90">
+<attribute name="NAME" x="28.734" y="44.488" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="31.02" y="44.488" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-38" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="41" y="44.75" rot="R90">
+<attribute name="NAME" x="39.984" y="43.988" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="42.27" y="43.988" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-39" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="39.5" y="50.5" rot="R90">
+<attribute name="NAME" x="38.484" y="49.738" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="40.77" y="49.738" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-40" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="41" y="57.25" rot="R90">
+<attribute name="NAME" x="39.984" y="56.488" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="42.27" y="56.488" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-41" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="48" y="63.75" rot="R90">
+<attribute name="NAME" x="46.984" y="62.988" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="49.27" y="62.988" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-42" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="51.25" y="61.75">
+<attribute name="NAME" x="50.488" y="62.766" size="0.254" layer="25" font="vector"/>
+<attribute name="VALUE" x="50.488" y="60.48" size="0.254" layer="27" font="vector"/>
+</element>
+<element name="C-L-43" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="47.75" y="51.5" rot="R270">
+<attribute name="NAME" x="48.766" y="52.262" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="46.48" y="52.262" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-44" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="46" y="45.25" rot="R270">
+<attribute name="NAME" x="47.016" y="46.012" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="44.73" y="46.012" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-45" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="43.5" y="44.75" rot="R90">
+<attribute name="NAME" x="42.484" y="43.988" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="44.77" y="43.988" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-46" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="55.75" y="40" rot="R90">
+<attribute name="NAME" x="54.734" y="39.238" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="57.02" y="39.238" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-47" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="66" y="46.5" rot="R90">
+<attribute name="NAME" x="64.984" y="45.738" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="67.27" y="45.738" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-48" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="66" y="55" rot="R90">
+<attribute name="NAME" x="64.984" y="54.238" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="67.27" y="54.238" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-49" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="63" y="59" rot="R180">
+<attribute name="NAME" x="63.762" y="57.984" size="0.254" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="63.762" y="60.27" size="0.254" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="C-L-50" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="74.75" y="61" rot="R90">
+<attribute name="NAME" x="73.734" y="60.238" size="0.254" layer="25" font="vector" rot="R90"/>
+<attribute name="VALUE" x="76.02" y="60.238" size="0.254" layer="27" font="vector" rot="R90"/>
+</element>
+<element name="C-L-51" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="72.5" y="55.5" rot="R270">
+<attribute name="NAME" x="73.516" y="56.262" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="71.23" y="56.262" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-52" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="72" y="48.5" rot="R270">
+<attribute name="NAME" x="73.016" y="49.262" size="0.254" layer="25" font="vector" rot="R270"/>
+<attribute name="VALUE" x="70.73" y="49.262" size="0.254" layer="27" font="vector" rot="R270"/>
+</element>
+<element name="C-L-53" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="69.75" y="45">
+<attribute name="NAME" x="68.988" y="46.016" size="0.254" layer="25" font="vector"/>
+<attribute name="VALUE" x="68.988" y="43.73" size="0.254" layer="27" font="vector"/>
+</element>
+<element name="C-L-54" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="91" y="35">
+<attribute name="NAME" x="90.238" y="36.016" size="0.254" layer="25" font="vector"/>
+<attribute name="VALUE" x="90.238" y="33.73" size="0.254" layer="27" font="vector"/>
+</element>
+<element name="C-L-55" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="90.25" y="43" rot="R180">
+<attribute name="NAME" x="91.012" y="41.984" size="0.254" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="91.012" y="44.27" size="0.254" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="C-L-56" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="88.5" y="51" rot="R180">
+<attribute name="NAME" x="89.262" y="49.984" size="0.254" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="89.262" y="52.27" size="0.254" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="C-L-57" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="88" y="59" rot="R180">
+<attribute name="NAME" x="88.762" y="57.984" size="0.254" layer="25" font="vector" rot="R180"/>
+<attribute name="VALUE" x="88.762" y="60.27" size="0.254" layer="27" font="vector" rot="R180"/>
+</element>
+<element name="C-L-58" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="96" y="58.5">
+<attribute name="NAME" x="95.238" y="59.516" size="0.254" layer="25" font="vector"/>
+<attribute name="VALUE" x="95.238" y="57.23" size="0.254" layer="27" font="vector"/>
+</element>
+<element name="C-L-59" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="94" y="55">
+<attribute name="NAME" x="93.238" y="56.016" size="0.254" layer="25" font="vector"/>
+<attribute name="VALUE" x="93.238" y="53.73" size="0.254" layer="27" font="vector"/>
+</element>
+<element name="C-L-60" library="name-in-lights" package="C0805-VOLTA" value="15pf" x="95" y="43">
+<attribute name="NAME" x="94.238" y="44.016" size="0.254" layer="25" font="vector"/>
+<attribute name="VALUE" x="94.238" y="41.73" size="0.254" layer="27" font="vector"/>
+</element>
 </elements>
 <signals>
 <signal name="GND">
@@ -1449,7 +1694,7 @@ V1.0 2018-04-18
 <contactref element="C-L-58" pad="2"/>
 <contactref element="C-L-59" pad="2"/>
 <contactref element="C-L-60" pad="2"/>
-<via x="43" y="69" extent="1-16" drill="0.7"/>
+<via x="43" y="69" extent="1-16" drill="0.8"/>
 <wire x1="26.639" y1="94.5" x2="26.639" y2="91.901" width="0.254" layer="1"/>
 <wire x1="26.639" y1="91.901" x2="29.64" y2="88.9" width="0.254" layer="1"/>
 <wire x1="12.31440625" y1="77.40559375" x2="12.32" y2="77.4" width="0.254" layer="1"/>
@@ -1662,15 +1907,15 @@ V1.0 2018-04-18
 <wire x1="35.084" y1="48.114" x2="38.6848125" y2="48.114" width="0.254" layer="1"/>
 <wire x1="79.1421875" y1="80.139" x2="83" y2="80.139" width="0.254" layer="1"/>
 <wire x1="78.1311875" y1="81.15" x2="79.1421875" y2="80.139" width="0.254" layer="1"/>
-<via x="85" y="82.25" extent="1-16" drill="0.7"/>
-<via x="78.75" y="85.75" extent="1-16" drill="0.7"/>
+<via x="85" y="82.25" extent="1-16" drill="0.8"/>
+<via x="78.75" y="85.75" extent="1-16" drill="0.8"/>
 <wire x1="76.02" y1="87.5" x2="77" y2="87.5" width="0.254" layer="1"/>
 <wire x1="77" y1="87.5" x2="78.75" y2="85.75" width="0.254" layer="1"/>
 <wire x1="78.75" y1="85.75" x2="82.861" y2="85.75" width="0.254" layer="1"/>
 <wire x1="82.861" y1="85.75" x2="83.25" y2="86.139" width="0.254" layer="1"/>
 <wire x1="85" y1="82.25" x2="82.25" y2="82.25" width="0.254" layer="16"/>
 <wire x1="82.25" y1="82.25" x2="78.75" y2="85.75" width="0.254" layer="16"/>
-<via x="53.25" y="40.75" extent="1-16" drill="0.7"/>
+<via x="53.25" y="40.75" extent="1-16" drill="0.8"/>
 <wire x1="53.25" y1="40.75" x2="58.22" y2="40.75" width="0.254" layer="16"/>
 <wire x1="58.22" y1="40.75" x2="67.17" y2="31.8" width="0.254" layer="16"/>
 <wire x1="53.25" y1="40.75" x2="53.25" y2="42.84" width="0.254" layer="1"/>
@@ -1681,43 +1926,43 @@ V1.0 2018-04-18
 <wire x1="7" y1="38.433" x2="6.964" y2="38.397" width="0.254" layer="1"/>
 <wire x1="12.8496125" y1="37.4" x2="11.4936125" y2="36.044" width="0.254" layer="1"/>
 <wire x1="11.4936125" y1="36.044" x2="8.1871875" y2="36.044" width="0.254" layer="1"/>
-<via x="11.25" y="39" extent="1-16" drill="0.7"/>
+<via x="11.25" y="39" extent="1-16" drill="0.8"/>
 <wire x1="7" y1="38.611" x2="7.389" y2="39" width="0.254" layer="1"/>
 <wire x1="7.389" y1="39" x2="11.25" y2="39" width="0.254" layer="1"/>
 <wire x1="11.25" y1="39" x2="16.57" y2="33.68" width="0.254" layer="16"/>
 <wire x1="16.8561" y1="33.68" x2="16.57" y2="33.68" width="0.254" layer="16"/>
-<via x="14" y="45.25" extent="1-16" drill="0.7"/>
+<via x="14" y="45.25" extent="1-16" drill="0.8"/>
 <wire x1="12.8068125" y1="44.802" x2="13.2548125" y2="45.25" width="0.254" layer="1"/>
 <wire x1="13.2548125" y1="45.25" x2="14" y2="45.25" width="0.254" layer="1"/>
 <wire x1="14" y1="45.25" x2="11.25" y2="42.5" width="0.254" layer="16"/>
 <wire x1="11.25" y1="42.5" x2="11.25" y2="39" width="0.254" layer="16"/>
 <wire x1="16.8561" y1="33.68" x2="23.6761" y2="40.5" width="0.254" layer="16"/>
 <wire x1="23.6761" y1="40.5" x2="31" y2="40.5" width="0.254" layer="16"/>
-<via x="43.5" y="49.5" extent="1-16" drill="0.7"/>
+<via x="43.5" y="49.5" extent="1-16" drill="0.8"/>
 <wire x1="43.5" y1="45.639" x2="43.5" y2="49.5" width="0.254" layer="1"/>
 <wire x1="52.25" y1="40.75" x2="53.25" y2="40.75" width="0.254" layer="16"/>
 <wire x1="43" y1="69" x2="43.5" y2="68.5" width="0.254" layer="16"/>
 <wire x1="43.5" y1="68.5" x2="43.5" y2="49.5" width="0.254" layer="16"/>
-<via x="53.75" y="80.5" extent="1-16" drill="0.7"/>
+<via x="53.75" y="80.5" extent="1-16" drill="0.8"/>
 <wire x1="53.75" y1="80.5" x2="43" y2="69.75" width="0.254" layer="16"/>
 <wire x1="43" y1="69.75" x2="43" y2="69" width="0.254" layer="16"/>
 <wire x1="52.595640625" y1="78.25196875" x2="53.75" y2="79.406328125" width="0.254" layer="1"/>
 <wire x1="53.75" y1="79.406328125" x2="53.75" y2="80.5" width="0.254" layer="1"/>
-<via x="38.5" y="87.75" extent="1-16" drill="0.7"/>
+<via x="38.5" y="87.75" extent="1-16" drill="0.8"/>
 <wire x1="36.18" y1="87.85" x2="38.4" y2="87.85" width="0.254" layer="1"/>
 <wire x1="38.4" y1="87.85" x2="38.5" y2="87.75" width="0.254" layer="1"/>
 <wire x1="38.5" y1="87.75" x2="45.75" y2="80.5" width="0.254" layer="16"/>
 <wire x1="45.75" y1="80.5" x2="53.75" y2="80.5" width="0.254" layer="16"/>
-<via x="30" y="86" extent="1-16" drill="0.7"/>
+<via x="30" y="86" extent="1-16" drill="0.8"/>
 <wire x1="30" y1="86" x2="31.75" y2="87.75" width="0.254" layer="16"/>
 <wire x1="31.75" y1="87.75" x2="38.5" y2="87.75" width="0.254" layer="16"/>
 <wire x1="25.36" y1="80.1" x2="30" y2="84.74" width="0.254" layer="1"/>
-<via x="28.25" y="96.25" extent="1-16" drill="0.7"/>
+<via x="28.25" y="96.25" extent="1-16" drill="0.8"/>
 <wire x1="19.68" y1="74.1" x2="21.7911875" y2="74.1" width="0.254" layer="1"/>
 <wire x1="26.645" y1="72.744" x2="27" y2="72.389" width="0.254" layer="1"/>
 <wire x1="21.7911875" y1="74.1" x2="23.1471875" y2="72.744" width="0.254" layer="1"/>
 <wire x1="23.1471875" y1="72.744" x2="26.645" y2="72.744" width="0.254" layer="1"/>
-<via x="67" y="83" extent="1-16" drill="0.7"/>
+<via x="67" y="83" extent="1-16" drill="0.8"/>
 <wire x1="66.98" y1="84.65" x2="66.98" y2="83.02" width="0.254" layer="1"/>
 <wire x1="66.98" y1="83.02" x2="67" y2="83" width="0.254" layer="1"/>
 <wire x1="67" y1="83" x2="76" y2="83" width="0.254" layer="16"/>
@@ -1727,15 +1972,15 @@ V1.0 2018-04-18
 <wire x1="3.6197" y1="79.8969875" x2="5" y2="78.5166875" width="0.254" layer="1"/>
 <wire x1="3.6197" y1="88.5087" x2="3.6197" y2="79.8969875" width="0.254" layer="1"/>
 <wire x1="5.111" y1="90" x2="3.6197" y2="88.5087" width="0.254" layer="1"/>
-<via x="31.5" y="38.75" extent="1-16" drill="0.7"/>
+<via x="31.5" y="38.75" extent="1-16" drill="0.8"/>
 <wire x1="33.74" y1="39.439" x2="32.189" y2="39.439" width="0.254" layer="1"/>
 <wire x1="32.189" y1="39.439" x2="31.5" y2="38.75" width="0.254" layer="1"/>
 <wire x1="31.5" y1="38.75" x2="31.5" y2="40" width="0.254" layer="16"/>
 <wire x1="31.5" y1="40" x2="31" y2="40.5" width="0.254" layer="16"/>
-<via x="28.5" y="30.5" extent="1-16" drill="0.7"/>
+<via x="28.5" y="30.5" extent="1-16" drill="0.8"/>
 <wire x1="28.5" y1="30.5" x2="28.5" y2="35.75" width="0.254" layer="16"/>
 <wire x1="28.5" y1="35.75" x2="31.5" y2="38.75" width="0.254" layer="16"/>
-<via x="7.25" y="68.25" extent="1-16" drill="0.7"/>
+<via x="7.25" y="68.25" extent="1-16" drill="0.8"/>
 <wire x1="5" y1="71" x2="7.25" y2="68.75" width="0.254" layer="1"/>
 <wire x1="7.25" y1="68.75" x2="7.25" y2="68.25" width="0.254" layer="1"/>
 <wire x1="7.25" y1="68.25" x2="10.25" y2="65.25" width="0.254" layer="1"/>
@@ -1766,7 +2011,7 @@ V1.0 2018-04-18
 <wire x1="17.5" y1="48" x2="14.75" y2="45.25" width="0.254" layer="1"/>
 <wire x1="14.75" y1="45.25" x2="14" y2="45.25" width="0.254" layer="1"/>
 <wire x1="14.1" y1="58.9" x2="17.5" y2="55.5" width="0.254" layer="1"/>
-<via x="7.5" y="53.5" extent="1-16" drill="0.7"/>
+<via x="7.5" y="53.5" extent="1-16" drill="0.8"/>
 <wire x1="14" y1="45.25" x2="7.5" y2="51.75" width="0.254" layer="16"/>
 <wire x1="7.5" y1="51.75" x2="7.5" y2="53.5" width="0.254" layer="16"/>
 <wire x1="13.42" y1="86" x2="11.82" y2="84.4" width="0.254" layer="1"/>
@@ -1776,7 +2021,7 @@ V1.0 2018-04-18
 <wire x1="17.889" y1="86.889" x2="17.889" y2="88.5" width="0.254" layer="1"/>
 <wire x1="17.889" y1="88.5" x2="18.278" y2="88.111" width="0.254" layer="1"/>
 <wire x1="18.278" y1="88.111" x2="21" y2="88.111" width="0.254" layer="1"/>
-<via x="19.25" y="94" extent="1-16" drill="0.7"/>
+<via x="19.25" y="94" extent="1-16" drill="0.8"/>
 <wire x1="21.6" y1="92.4" x2="20.85" y2="92.4" width="0.254" layer="1"/>
 <wire x1="20.85" y1="92.4" x2="19.25" y2="94" width="0.254" layer="1"/>
 <wire x1="28.25" y1="96.25" x2="30" y2="94.5" width="0.254" layer="16"/>
@@ -1801,7 +2046,7 @@ V1.0 2018-04-18
 <wire x1="98" y1="84" x2="95.47" y2="84" width="0.254" layer="1"/>
 <wire x1="95.47" y1="84" x2="95.32" y2="84.15" width="0.254" layer="1"/>
 <wire x1="94.889" y1="55" x2="95.389" y2="54.5" width="0.254" layer="1"/>
-<via x="94.75" y="49.75" extent="1-16" drill="0.7"/>
+<via x="94.75" y="49.75" extent="1-16" drill="0.8"/>
 <wire x1="97.41" y1="49.47" x2="95.03" y2="49.47" width="0.254" layer="1"/>
 <wire x1="95.03" y1="49.47" x2="94.75" y2="49.75" width="0.254" layer="1"/>
 <wire x1="94.75" y1="49.75" x2="85.12" y2="49.75" width="0.254" layer="16"/>
@@ -2574,9 +2819,9 @@ V1.0 2018-04-18
 <wire x1="92.5" y1="41.389" x2="92.5" y2="40.6" width="0.254" layer="1"/>
 <contactref element="J1" pad="1"/>
 <contactref element="R1" pad="1"/>
-<via x="27.25" y="36.5" extent="1-16" drill="0.7"/>
-<via x="38.5" y="36" extent="1-16" drill="0.7"/>
-<via x="60" y="35" extent="1-16" drill="0.7"/>
+<via x="27.25" y="36.5" extent="1-16" drill="0.8"/>
+<via x="38.5" y="36" extent="1-16" drill="0.8"/>
+<via x="60" y="35" extent="1-16" drill="0.8"/>
 <wire x1="64.63" y1="31.8" x2="61.43" y2="35" width="0.254" layer="1"/>
 <wire x1="61.43" y1="35" x2="60" y2="35" width="0.254" layer="1"/>
 <wire x1="60.02" y1="31.68" x2="60" y2="31.7" width="0.254" layer="1"/>
